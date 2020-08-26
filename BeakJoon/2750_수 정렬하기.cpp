@@ -90,26 +90,36 @@ void heap_sort(int* arr, int size)
 void SJ_HeapSort(int* arr, int size)
 {
 	if (size <= 1) return;
-	for (int i = 1; i < size; ++i)
+	for (int j = size; j >= 0; --j)
 	{
-		int child = i;
-		do
+		if (j != size)
 		{
-			int root = (child - 1) / 2;
-			if (arr[root] < arr[child])
+			int temp = arr[0];
+			arr[0] = arr[j];
+			arr[j] = temp;
+		}
+
+		for (int i = 1; i < j; ++i)
+		{
+			int child = i;
+			do
 			{
-				//cout << "바꿔!: " << arr[root] << " " << arr[child] << endl;
-				int temp = arr[root];
-				arr[root] = arr[child];
-				arr[child] = temp;
-				child = root;
-			}
-			else
-			{
-				// 바뀌는 일이 없다면 root위로는 다시 검사 할필요없잔헝.
-				break;
-			}
-		} while (child != 0);
+				int root = (child - 1) / 2;
+				if (arr[root] < arr[child])
+				{
+					//cout << "바꿔!: " << arr[root] << " " << arr[child] << endl;
+					int temp = arr[root];
+					arr[root] = arr[child];
+					arr[child] = temp;
+					child = root;
+				}
+				else
+				{
+					// 바뀌는 일이 없다면 root위로는 다시 검사 할필요없잔헝.
+					break;
+				}
+			} while (child != 0);
+		}
 	}
 }
 
@@ -133,21 +143,6 @@ int main()
 
 	// 방법 4 (방법 3 변형): 
 	SJ_HeapSort(arr, a);
-	for (int i = a - 1; i >= 0; --i)
-	{
-		int temp = arr[0];
-		arr[0] = arr[i];
-		arr[i] = temp;
-
-		//for (int j = 0; j < a; ++j)
-		//{
-		//	cout << arr[j] << " ";
-		//}
-		//cout << "과정 끝" << endl << endl;
-
-		SJ_HeapSort(arr, i);
-	}
-
 
 	for (int i = 0; i < a; ++i)
 	{
