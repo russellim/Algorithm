@@ -4,9 +4,6 @@
 #include <iostream>
 using namespace std;
 
-int a;
-int* store;
-
 void mergeSort(int* arr, int start, int end)
 {
 	if (start >= end) return;
@@ -15,41 +12,35 @@ void mergeSort(int* arr, int start, int end)
 	mergeSort(arr, start, mid);
 	mergeSort(arr, mid + 1, end);
 
-	int i = start, j = mid + 1, k = start;
+	// i 왼쪽자른거 시작, j 오른쪽 자른거 시작.
+	// k 저장할 배열 인덱스.
+	int* store = new int[end - start + 1];
+	int i = start, j = mid + 1, k = 0;
 
-	while(i <= mid && j <= end)
+	// 한쪽 먼저 끝날때까지 크기비교한거 저장.
+	while (i <= mid && j <= end)
 	{
 		if (arr[i] < arr[j])
 		{
-			store[k] = arr[i++];
+			store[k++] = arr[i++];
 		}
 		else
 		{
-			store[k] = arr[j++];
-		}
-		k++;
-	}
-	if (i > mid)
-	{
-		for (int t = j; t <= end; ++t)
-		{
-			store[k] = arr[t];
-			k++;
+			store[k++] = arr[j++];
 		}
 	}
-	else
+
+	// 남은쪽 다 저장.
+	while (i <= mid) store[k++] = arr[i++];
+	while (j <= end) store[k++] = arr[j++];
+
+	// 원본에 적용.
+	for (int t = start, k = 0; t <= end; ++t)
 	{
-		for (int t = i; t <= mid; ++t)
-		{
-			store[k] = arr[t];
-			k++;
-		}
+		arr[t] = store[k++];
+		//cout << arr[t] << " ";
 	}
-	
-	for (int t = start; t <= end; ++t)
-	{
-		arr[t] = store[t];
-	}
+	delete[] store; // 해제 중요!
 }
 
 int main()
@@ -57,15 +48,15 @@ int main()
 	ios_base::sync_with_stdio(false);
 	cout.tie(NULL); cin.tie(NULL);
 
+	int a;
 	cin >> a;
 	int* arr = new int[a];
-	store = new int[a];
 	for (int i = 0; i < a; ++i)
 	{
 		cin >> arr[i];
 	}
 
-	mergeSort(arr, 0, a-1);
+	mergeSort(arr, 0, a - 1);
 
 	for (int i = 0; i < a; ++i)
 	{
