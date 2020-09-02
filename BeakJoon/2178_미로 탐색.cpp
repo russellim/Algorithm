@@ -8,17 +8,15 @@ using namespace std;
 
 int main()
 {
-	ios_base::sync_with_stdio(false);
-	cout.tie(NULL); cin.tie(NULL);
+	//ios_base::sync_with_stdio(false);
+	//cout.tie(NULL); cin.tie(NULL);
+	//scanf를 사용하니까 쓰면안돼.
 
 	int direct[4][2] = { {0, -1}, {1, 0}, {0, 1}, {-1, 0} };
-	int n, m, r;
+	int n, m;
 	cin >> n >> m;
 
-	int** maze = new int* [n];
-	for (int i = 0; i < n; ++i)
-		maze[i] = new int[m];
-
+	int maze[101][101];
 	for (int i = 0; i < n; ++i)
 	{
 		for (int j = 0; j < m; ++j)
@@ -39,7 +37,7 @@ int main()
 		{
 			nx = cur.second + direct[i][0];
 			ny = cur.first + direct[i][1];
-			if (nx >= 0 && nx < m && ny >= 0 && ny < n && maze[ny][nx] == 1)
+			if (!(nx == 0 && ny == 0) && nx >= 0 && nx < m && ny >= 0 && ny < n && maze[ny][nx] == 1)
 			{
 				q.push(make_pair(ny, nx));
 				maze[ny][nx] = maze[cur.first][cur.second] + 1;
