@@ -6,6 +6,7 @@ Study algorithm
 1260: DFS와 BFS https://www.acmicpc.net/problem/1260  
 1463: 1로 만들기 DP https://www.acmicpc.net/problem/1463  
 1920: 수 찾기 BinarySearch https://www.acmicpc.net/problem/1920  
+1932: 정수 삼각형 DP https://www.acmicpc.net/problem/1932  
 2178: 미로 탐색 BFS https://www.acmicpc.net/problem/2178  
 2579: 계단 오르기 DP https://www.acmicpc.net/problem/2579  
 2667: 단지번호붙이기 BFS https://www.acmicpc.net/problem/2667  
