@@ -1,6 +1,6 @@
 # Algorithm
-Study algorithm
-2020.08.23 ~
+Study algorithm 2020.08.23 ~  
+https://solved.ac/profile/neneg273  
 
 
 1260: DFS와 BFS https://www.acmicpc.net/problem/1260  
