@@ -16,10 +16,10 @@ https://solved.ac/profile/neneg273
 10989: 수 정렬하기 3 Sort https://www.acmicpc.net/problem/10989  
   
   
-## kakao blind
-2018: 비밀지도 https://programmers.co.kr/learn/courses/30/lessons/17681  
-2020_1: 문자열 압축 https://programmers.co.kr/learn/courses/30/lessons/60057  
-2020_2: 괄호 변환 https://programmers.co.kr/learn/courses/30/lessons/60058  
-2021_1:  
-2021_2:  
-2021_3:  
+## programmers
+kakao 2018: 비밀지도 https://programmers.co.kr/learn/courses/30/lessons/17681  
+kakao 2020_1: 문자열 압축 https://programmers.co.kr/learn/courses/30/lessons/60057  
+kakao 2020_2: 괄호 변환 https://programmers.co.kr/learn/courses/30/lessons/60058  
+kakao 2021_1:  
+kakao 2021_2:  
+kakao 2021_3:  
