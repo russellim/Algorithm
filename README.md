@@ -5,7 +5,8 @@ https://solved.ac/profile/neneg273
 ## BOJ
 1260: DFS와 BFS https://www.acmicpc.net/problem/1260  
 1463: 1로 만들기 DP https://www.acmicpc.net/problem/1463  
-1697: 숨바꼭질 https://www.acmicpc.net/problem/1697  
+1697: 숨바꼭질 BFS https://www.acmicpc.net/problem/1697  
+1912: 연속합 DP https://www.acmicpc.net/problem/1912  
 1920: 수 찾기 BinarySearch https://www.acmicpc.net/problem/1920  
 1932: 정수 삼각형 DP https://www.acmicpc.net/problem/1932  
 2156: 포도주 시식 DP https://www.acmicpc.net/problem/2156  
