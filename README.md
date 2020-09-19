@@ -19,7 +19,7 @@ https://solved.ac/profile/neneg273
 2839: 설탕 배달 Greedy, DP https://www.acmicpc.net/problem/2839  
 7576: 토마토 BFS https://www.acmicpc.net/problem/7576  
 10989: 수 정렬하기 3 Sort https://www.acmicpc.net/problem/10989  
-11053: 가장 긴 증가하는 부분 수열 https://www.acmicpc.net/problem/11053  
+11053: 가장 긴 증가하는 부분 수열 DP https://www.acmicpc.net/problem/11053  
   
   
 ## programmers
