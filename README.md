@@ -3,6 +3,7 @@ Study algorithm 2020.08.23 ~
 https://solved.ac/profile/neneg273  
 
 ## BOJ
+1012: 유기농 배추 BFS https://www.acmicpc.net/problem/1012
 1260: DFS와 BFS https://www.acmicpc.net/problem/1260  
 1463: 1로 만들기 DP https://www.acmicpc.net/problem/1463  
 1697: 숨바꼭질 BFS https://www.acmicpc.net/problem/1697  
