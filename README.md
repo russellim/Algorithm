@@ -20,6 +20,7 @@ https://solved.ac/profile/neneg273
 2751: 수 정렬하기 2 MergeSort https://www.acmicpc.net/problem/2751  
 2839: 설탕 배달 Greedy, DP https://www.acmicpc.net/problem/2839  
 7576: 토마토 BFS https://www.acmicpc.net/problem/7576  
+10815: 숫자 카드 Sort https://www.acmicpc.net/problem/10815  
 10844: 쉬운 계단 수 DP https://www.acmicpc.net/problem/10844  
 10989: 수 정렬하기 3 Sort https://www.acmicpc.net/problem/10989  
 11053: 가장 긴 증가하는 부분 수열 DP https://www.acmicpc.net/problem/11053  
