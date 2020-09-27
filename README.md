@@ -20,6 +20,7 @@ https://solved.ac/profile/neneg273
 2667: 단지번호붙이기 BFS https://www.acmicpc.net/problem/2667  
 2750: 수 정렬 HeapSort https://www.acmicpc.net/problem/2750  
 2751: 수 정렬하기 2 MergeSort https://www.acmicpc.net/problem/2751  
+2775: 부녀회장이 될테야 DP https://www.acmicpc.net/problem/2775  
 2839: 설탕 배달 Greedy, DP https://www.acmicpc.net/problem/2839  
 7576: 토마토 BFS https://www.acmicpc.net/problem/7576  
 10815: 숫자 카드 Sort https://www.acmicpc.net/problem/10815  
