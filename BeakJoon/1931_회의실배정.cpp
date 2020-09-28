@@ -8,6 +8,8 @@ using namespace std;
 
 typedef pair<int, int> p;
 
+// 끝나는 시간 우선으로 오름차순.
+// 끝나는 시간이 같으면 시작 시간 오름차순.
 bool compare(p a, p b)
 {
 	if (a.second == b.second)
