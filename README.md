@@ -12,6 +12,7 @@ https://solved.ac/profile/neneg273
 1697: 숨바꼭질 BFS https://www.acmicpc.net/problem/1697  
 1912: 연속합 DP https://www.acmicpc.net/problem/1912  
 1920: 수 찾기 BinarySearch https://www.acmicpc.net/problem/1920  
+1931: 회의실배정 Sort https://www.acmicpc.net/problem/1931  
 1932: 정수 삼각형 DP https://www.acmicpc.net/problem/1932  
 2156: 포도주 시식 DP https://www.acmicpc.net/problem/2156  
 2178: 미로 탐색 BFS https://www.acmicpc.net/problem/2178  
