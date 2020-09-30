@@ -1,5 +1,5 @@
 ﻿// 20.09.17 수
-// 9655: 숨바꼭질 https://www.acmicpc.net/problem/9655
+// 9655: 돌 게임 https://www.acmicpc.net/problem/9655
 // DP
 #include <iostream>
 using namespace std;
