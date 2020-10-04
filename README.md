@@ -32,6 +32,7 @@ https://solved.ac/profile/neneg273
 10844: 쉬운 계단 수 DP https://www.acmicpc.net/problem/10844  
 10953: A+B - 6 String https://www.acmicpc.net/problem/10953  
 10989: 수 정렬하기 3 Sort https://www.acmicpc.net/problem/10989  
+11052: 카드 구매하기 DP https://www.acmicpc.net/problem/11052  
 11053: 가장 긴 증가하는 부분 수열 DP https://www.acmicpc.net/problem/11053  
 14501: 퇴사 DP https://www.acmicpc.net/problem/14501  
   
