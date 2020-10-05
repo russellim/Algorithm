@@ -30,6 +30,7 @@ https://solved.ac/profile/neneg273
 9655: 돌 게임 https://www.acmicpc.net/problem/9655  
 10815: 숫자 카드 Sort https://www.acmicpc.net/problem/10815  
 10844: 쉬운 계단 수 DP https://www.acmicpc.net/problem/10844  
+10867: 중복 빼고 정렬하기 Vector https://www.acmicpc.net/problem/10867  
 10953: A+B - 6 String https://www.acmicpc.net/problem/10953  
 10989: 수 정렬하기 3 Sort https://www.acmicpc.net/problem/10989  
 11052: 카드 구매하기 DP https://www.acmicpc.net/problem/11052  
