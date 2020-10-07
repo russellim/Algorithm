@@ -1,4 +1,4 @@
-﻿// 20.10.06. 화
+﻿// 20.10.07. 수
 // 1874: 스택 수열 https://www.acmicpc.net/problem/1874
 // Stack
 #include <iostream>
