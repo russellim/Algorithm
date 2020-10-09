@@ -8,6 +8,7 @@ https://solved.ac/profile/neneg273
 1158: 요세푸스 문제 https://www.acmicpc.net/problem/1158  
 1181: 단어 정렬 String, Sort https://www.acmicpc.net/problem/1181  
 1260: DFS와 BFS https://www.acmicpc.net/problem/1260  
+1389: 케빈 베이컨의 6단계 법칙 BFS https://www.acmicpc.net/problem/1389  
 1406: 에디터 List https://www.acmicpc.net/problem/1406  
 1463: 1로 만들기 DP https://www.acmicpc.net/problem/1463  
 1697: 숨바꼭질 BFS https://www.acmicpc.net/problem/1697  
