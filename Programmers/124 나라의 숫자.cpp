@@ -1,6 +1,6 @@
 ﻿// 20.10.12. 월
 // 124 나라의 숫자  https://programmers.co.kr/learn/courses/30/lessons/12899
-// 
+// (IDE 사용금지) 범위에 주의.
 #include <string>
 #include <vector>
 #include <iostream>
@@ -9,7 +9,7 @@ using namespace std;
 
 string solution(int n) {
     string answer = "";
-    int temp = 0, dob = 1;
+    long long temp = 0, dob = 1;
     while (n > 3)
     {
         if (n % 3 == 0)
@@ -24,14 +24,10 @@ string solution(int n) {
         }
         dob *= 10;
     }
-
+    if (n == 3) n = 4;
     temp += dob * n;
 
     answer = to_string(temp);
-    for (int i = 0; i < answer.size(); ++i)
-    {
-        if (answer[i] == '3') answer[i] = '4';
-    }
     return answer;
 }
 
