@@ -13,9 +13,7 @@ vector<int> solution(vector<int> progresses, vector<int> speeds) {
     int pivot = -1;     // answer 인덱스 pivot.
     for (int i = 0; i < progresses.size(); ++i)
     {
-        int temp = 100 - progresses[i];
-        if (temp % speeds[i] == 0) ans = temp / speeds[i];
-        else ans = temp / speeds[i] + 1;
+        ans = ceil((100 - progresses[i]) / (double)speeds[i]);
 
         // 일 수 구하고 이전에 일수max값과 비교
         if (preday < ans)
