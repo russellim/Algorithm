@@ -52,6 +52,7 @@ kakao 2019겨울인턴: 크레인 인형뽑기 게임 https://programmers.co.kr/
 #### Level 2
 124 나라의 숫자  https://programmers.co.kr/learn/courses/30/lessons/12899  
 스택/큐_주식가격 https://programmers.co.kr/learn/courses/30/lessons/42584  
+스택/큐_기능개발 https://programmers.co.kr/learn/courses/30/lessons/42586  
 스택/큐_프린터 https://programmers.co.kr/learn/courses/30/lessons/42587  
 kakao 2020_1: 문자열 압축 https://programmers.co.kr/learn/courses/30/lessons/60057  
 kakao 2020_2: 괄호 변환 https://programmers.co.kr/learn/courses/30/lessons/60058  
