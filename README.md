@@ -51,6 +51,7 @@ kakao 2018_비밀지도 https://programmers.co.kr/learn/courses/30/lessons/17681
 kakao 2018_다트 게임 https://programmers.co.kr/learn/courses/30/lessons/17682  
 kakao 2019_실패율 https://programmers.co.kr/learn/courses/30/lessons/42889  
 kakao 2019겨울인턴_크레인 인형뽑기 게임 https://programmers.co.kr/learn/courses/30/lessons/64061  
+kakao 2020인턴_키패드 누르기 https://programmers.co.kr/learn/courses/30/lessons/67256  
 #### Level 2
 124 나라의 숫자  https://programmers.co.kr/learn/courses/30/lessons/12899  
 스택/큐_주식가격 https://programmers.co.kr/learn/courses/30/lessons/42584  
