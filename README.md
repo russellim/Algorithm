@@ -48,6 +48,7 @@ https://solved.ac/profile/neneg273
 완전탐색 https://programmers.co.kr/learn/courses/30/lessons/42840  
 월간 코챌1_두 개 뽑아서 더하기 https://programmers.co.kr/learn/courses/30/lessons/68644  
 kakao 2018_비밀지도 https://programmers.co.kr/learn/courses/30/lessons/17681  
+kakao 2018_다트 게임 https://programmers.co.kr/learn/courses/30/lessons/17682  
 kakao 2019_실패율 https://programmers.co.kr/learn/courses/30/lessons/42889  
 kakao 2019겨울인턴_크레인 인형뽑기 게임 https://programmers.co.kr/learn/courses/30/lessons/64061  
 #### Level 2
