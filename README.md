@@ -59,5 +59,6 @@ kakao 2020인턴_키패드 누르기 https://programmers.co.kr/learn/courses/30/
 스택/큐_기능개발 https://programmers.co.kr/learn/courses/30/lessons/42586  
 스택/큐_프린터 https://programmers.co.kr/learn/courses/30/lessons/42587  
 kakao 2019_오픈채팅방 https://programmers.co.kr/learn/courses/30/lessons/42888  
+kakao 2019_튜플  https://programmers.co.kr/learn/courses/30/lessons/64065  
 kakao 2020_문자열 압축 https://programmers.co.kr/learn/courses/30/lessons/60057  
 kakao 2020_괄호 변환 https://programmers.co.kr/learn/courses/30/lessons/60058  
