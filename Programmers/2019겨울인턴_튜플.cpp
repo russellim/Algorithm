@@ -5,9 +5,12 @@
 #include <vector>
 #include <algorithm>
 #include <iostream>
+#include <map>
 
 using namespace std;
 
+// 방법1.
+// 길이 짧은 순으로 
 vector<int> solution(string s) {
     vector<int> answer;
     vector<vector<int> > v; // 2차원 int 벡터로 저장할거임.
@@ -48,6 +51,44 @@ vector<int> solution(string s) {
                 break;
             }
         }
+    }
+
+    return answer;
+}
+
+// 방법 2.
+// 빈도 수 체크해서 가장 높은 빈도 순으로 정렬.
+// 복사때문인지 실행시간은 별 차이 없었음(방법1이 쪼오오오오금 더 빠름).
+typedef pair<string, int> T;
+
+vector<int> solution(string s) {
+    vector<int> answer;
+    map<string, int> m;
+    string temp;
+    bool vstart = false;
+    for (int i = 1; i < s.size() - 1; ++i)
+    {
+        if (s[i] == '{') vstart = true;
+        else if (isdigit(s[i])) temp += s[i];
+        else if (vstart && s[i] == ',')
+        {
+            m[temp]++;
+            temp = "";
+        }
+        else if (s[i] == '}')
+        {
+            m[temp]++;
+            temp = "";
+            vstart = false;
+        }
+    }
+
+    vector<T> v(m.begin(), m.end());
+    sort(v.begin(), v.end(), [](T& a, T& b) {return a.second > b.second; });
+
+    for (auto& x : v)
+    {
+        answer.push_back(atoi(x.first.c_str()));
     }
 
     return answer;
