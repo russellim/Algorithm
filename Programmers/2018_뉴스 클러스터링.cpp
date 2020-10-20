@@ -15,14 +15,16 @@ vector<string> StringToVector2(const string& s)
     string temp;
     for (int i = 0; i < s.size(); ++i)
     {
+        // 알파벳 아니면 거르는걸로.
+        if (!isalpha(s[i]))
+        {
+            temp = "";
+            continue;
+        }
         temp += toupper(s[i]);
         if (temp.size() == 2)
         {
-            // 알파벳 아니면 거르는걸로.
-            if (isalpha(temp[0]) && isalpha(temp[1]))
-            {
-                v.push_back(temp);
-            }
+            v.push_back(temp);
             temp = "";
             i--;
         }
