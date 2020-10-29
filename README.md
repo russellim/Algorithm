@@ -38,6 +38,7 @@ https://solved.ac/profile/neneg273
 10989: 수 정렬하기 3 Sort https://www.acmicpc.net/problem/10989  
 11052: 카드 구매하기 DP https://www.acmicpc.net/problem/11052  
 11053: 가장 긴 증가하는 부분 수열 DP https://www.acmicpc.net/problem/11053  
+11659: 구간 합 구하기 4 부분합 https://www.acmicpc.net/problem/11659  
 14501: 퇴사 DP https://www.acmicpc.net/problem/14501  
 14889: 스타트와 링크 BT https://www.acmicpc.net/problem/14889  
   
