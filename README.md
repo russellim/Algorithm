@@ -12,6 +12,7 @@ https://solved.ac/profile/neneg273
 1406: 에디터 List https://www.acmicpc.net/problem/1406  
 1463: 1로 만들기 DP https://www.acmicpc.net/problem/1463  
 1697: 숨바꼭질 BFS https://www.acmicpc.net/problem/1697  
+1753: 최단경로 Dijkstra https://www.acmicpc.net/problem/1753  
 1874: 스택 수열 Stack https://www.acmicpc.net/problem/1874  
 1912: 연속합 DP https://www.acmicpc.net/problem/1912  
 1920: 수 찾기 BinarySearch https://www.acmicpc.net/problem/1920  
