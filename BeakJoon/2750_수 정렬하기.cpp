@@ -19,7 +19,7 @@ void quick_sort(int* arr, int start, int end)
 	while (i <= j)
 	{
 		while (i <= end && arr[i] <= arr[pivot]) i++;
-		while (j >= start && arr[j] >= arr[pivot]) j--;
+		while (j > start && arr[j] >= arr[pivot]) j--;
 		if (i > j)
 		{
 			temp = arr[pivot];
