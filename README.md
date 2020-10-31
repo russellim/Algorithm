@@ -24,7 +24,7 @@ https://solved.ac/profile/neneg273
 2579: 계단 오르기 DP https://www.acmicpc.net/problem/2579  
 2606: 바이러스 DFS https://www.acmicpc.net/problem/2606  
 2667: 단지번호붙이기 BFS https://www.acmicpc.net/problem/2667  
-2750: 수 정렬 HeapSort https://www.acmicpc.net/problem/2750  
+2750: 수 정렬하기 HeapSort https://www.acmicpc.net/problem/2750  
 2751: 수 정렬하기 2 MergeSort https://www.acmicpc.net/problem/2751  
 2775: 부녀회장이 될테야 DP https://www.acmicpc.net/problem/2775  
 2839: 설탕 배달 Greedy, DP https://www.acmicpc.net/problem/2839  
@@ -40,6 +40,7 @@ https://solved.ac/profile/neneg273
 11052: 카드 구매하기 DP https://www.acmicpc.net/problem/11052  
 11053: 가장 긴 증가하는 부분 수열 DP https://www.acmicpc.net/problem/11053  
 11659: 구간 합 구하기 4 부분합 https://www.acmicpc.net/problem/11659  
+11931_수 정렬하기 Sort 4 httpswww.acmicpc.netproblem11931  
 14501: 퇴사 DP https://www.acmicpc.net/problem/14501  
 14889: 스타트와 링크 BT https://www.acmicpc.net/problem/14889  
   
