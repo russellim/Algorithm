@@ -60,6 +60,7 @@ kakao 2020인턴_키패드 누르기 https://programmers.co.kr/learn/courses/30/
 124 나라의 숫자  https://programmers.co.kr/learn/courses/30/lessons/12899  
 스택/큐_주식가격 https://programmers.co.kr/learn/courses/30/lessons/42584  
 해시_전화번호 목록 https://programmers.co.kr/learn/courses/30/lessons/42577  
+스택/큐_다리를 지나는 트럭 https://programmers.co.kr/learn/courses/30/lessons/42583  
 스택/큐_기능개발 https://programmers.co.kr/learn/courses/30/lessons/42586  
 스택/큐_프린터 https://programmers.co.kr/learn/courses/30/lessons/42587  
 kakao 2017_카카오프렌즈 컬러링북 https://programmers.co.kr/learn/courses/30/lessons/1829  
