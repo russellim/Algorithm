@@ -1,9 +1,69 @@
-﻿#include <iostream>
+﻿// 20.11.03. 화 update.
+// 2020_괄호 변환 https://programmers.co.kr/learn/courses/30/lessons/60058
+// 재귀. IDE 사용 금지.
+#include <iostream>
 #include <string>
 #include <vector>
 
 using namespace std;
 
+// 201103 new 버전!
+string MakeUV(string p)
+{
+	if (p == "") return "";
+	string u = "", v = "";
+	int stack = 0;
+	bool notfair = false; // u가 "올바른" 괄호형인지 확인.
+
+	// u, v 분리와 u 올바른 괄호형 확인을 한번에.
+	for (int i = 0; i < p.size(); ++i)
+	{
+		if (p[i] == '(') stack++;
+		else if (p[i] == ')') stack--;
+
+		if (stack < 0) notfair = true;
+
+		if (stack == 0)
+		{
+			u = p.substr(0, i + 1);
+			v = p.substr(i + 1);
+			break;
+		}
+	}
+
+	// 재귀로 v가 "" 일때까지.
+	v = MakeUV(v);
+
+	// u가 올바른 괄호형이 아니면 변환후 반환해주세여.
+	if (notfair)
+	{
+		string temp;
+		temp = "(" + v + ")";
+		u = u.substr(1, u.size() - 2);
+		for (int i = 0; i < u.size(); ++i)
+		{
+			if (u[i] == '(') u[i] = ')';
+			else u[i] = '(';
+		}
+		return temp + u;
+	}
+	// u가 올바른 괄호형이면 그냥 반환.
+	return u + v;
+}
+
+string solution(string p) {
+	if (p == "") return "";
+	string answer = "";
+
+	answer = MakeUV(p);
+
+	return answer;
+}
+
+
+
+
+// 200915 old 버전.
 string solution(string p)
 {
 	string u, v;
