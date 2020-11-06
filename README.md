@@ -49,18 +49,18 @@ https://solved.ac/profile/neneg273
 #### Level 1
 완주하지 못한 선수 Hash https://programmers.co.kr/learn/courses/30/lessons/42576  
 완전탐색 https://programmers.co.kr/learn/courses/30/lessons/42840  
+탐욕법_체육복 Hash https://programmers.co.kr/learn/courses/30/lessons/42862  
 월간 코챌1_두 개 뽑아서 더하기 https://programmers.co.kr/learn/courses/30/lessons/68644  
 kakao 2018_비밀지도 https://programmers.co.kr/learn/courses/30/lessons/17681  
 kakao 2018_다트 게임 https://programmers.co.kr/learn/courses/30/lessons/17682  
-탐욕법_체육복 Hash https://programmers.co.kr/learn/courses/30/lessons/42862  
 kakao 2019_실패율 https://programmers.co.kr/learn/courses/30/lessons/42889  
 kakao 2019겨울인턴_크레인 인형뽑기 게임 https://programmers.co.kr/learn/courses/30/lessons/64061  
 kakao 2020인턴_키패드 누르기 https://programmers.co.kr/learn/courses/30/lessons/67256  
 #### Level 2
 124 나라의 숫자  https://programmers.co.kr/learn/courses/30/lessons/12899  
-스택/큐_주식가격 https://programmers.co.kr/learn/courses/30/lessons/42584  
 해시_전화번호 목록 https://programmers.co.kr/learn/courses/30/lessons/42577  
 스택/큐_다리를 지나는 트럭 https://programmers.co.kr/learn/courses/30/lessons/42583  
+스택/큐_주식가격 https://programmers.co.kr/learn/courses/30/lessons/42584  
 스택/큐_기능개발 https://programmers.co.kr/learn/courses/30/lessons/42586  
 스택/큐_프린터 https://programmers.co.kr/learn/courses/30/lessons/42587  
 kakao 2017_카카오프렌즈 컬러링북 https://programmers.co.kr/learn/courses/30/lessons/1829  
@@ -77,5 +77,6 @@ kakao 2020_문자열 압축 https://programmers.co.kr/learn/courses/30/lessons/6
 kakao 2020_괄호 변환 https://programmers.co.kr/learn/courses/30/lessons/60058  
 #### Level 3
 kakao 2018_추석 트래픽 https://programmers.co.kr/learn/courses/30/lessons/17676  
+kakao 2018_셔틀버스 https://programmers.co.kr/learn/courses/30/lessons/17678  
 kakao 2019_길 찾기 게임 Tree https://programmers.co.kr/learn/courses/30/lessons/42892  
 kakao 2020_좌물쇠와 열쇠 https://programmers.co.kr/learn/courses/30/lessons/60059  
