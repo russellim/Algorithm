@@ -75,6 +75,7 @@ kakao 2019_오픈채팅방 https://programmers.co.kr/learn/courses/30/lessons/42
 kakao 2019_튜플  https://programmers.co.kr/learn/courses/30/lessons/64065  
 kakao 2020_문자열 압축 https://programmers.co.kr/learn/courses/30/lessons/60057  
 kakao 2020_괄호 변환 https://programmers.co.kr/learn/courses/30/lessons/60058  
+kakap 2020인턴_수식 최대화 https://programmers.co.kr/learn/courses/30/lessons/67257  
 #### Level 3
 kakao 2018_추석 트래픽 https://programmers.co.kr/learn/courses/30/lessons/17676  
 kakao 2018_셔틀버스 https://programmers.co.kr/learn/courses/30/lessons/17678  
