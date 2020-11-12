@@ -45,6 +45,7 @@ https://solved.ac/profile/neneg273
 11728: 배열 합치기 MergeSort https://www.acmicpc.net/problem/11728  
 11931: 수 정렬하기 4 Sort https://www.acmicpc.net/problem/11931  
 14501: 퇴사 DP https://www.acmicpc.net/problem/14501  
+14502: 연구소 DFS https://www.acmicpc.net/problem/14502  
 14889: 스타트와 링크 BT https://www.acmicpc.net/problem/14889  
   
   
