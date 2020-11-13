@@ -31,6 +31,7 @@ https://solved.ac/profile/neneg273
 2839: 설탕 배달 Greedy, DP https://www.acmicpc.net/problem/2839  
 7576: 토마토 BFS https://www.acmicpc.net/problem/7576  
 7568: 덩치 BF https://www.acmicpc.net/problem/7568  
+9465: 스티커 DP https://www.acmicpc.net/problem/9465  
 9655: 돌 게임 https://www.acmicpc.net/problem/9655  
 10815: 숫자 카드 Sort https://www.acmicpc.net/problem/10815  
 10816: 숫자 카드 2 Search https://www.acmicpc.net/problem/10816  
