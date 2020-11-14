@@ -48,6 +48,7 @@ https://solved.ac/profile/neneg273
 14501: 퇴사 DP https://www.acmicpc.net/problem/14501  
 14502: 연구소 DFS https://www.acmicpc.net/problem/14502  
 14889: 스타트와 링크 BT https://www.acmicpc.net/problem/14889  
+15810: 스티커 BinarySearch https://www.acmicpc.net/problem/15810  
   
   
 ## programmers
