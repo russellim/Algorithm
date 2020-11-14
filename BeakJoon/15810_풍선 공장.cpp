@@ -1,5 +1,5 @@
 ﻿// 20.11.14. 토
-// 15810: 스티커 https://www.acmicpc.net/problem/15810
+// 15810: 풍선 공장 https://www.acmicpc.net/problem/15810
 // BS
 #include <iostream>
 #include <vector>
