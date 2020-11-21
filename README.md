@@ -4,6 +4,7 @@ https://solved.ac/profile/neneg273
 
 ## BOJ
 1002: 터렛 Math https://www.acmicpc.net/problem/1002  
+1010: 다리 놓기 Math https://www.acmicpc.net/problem/1010  
 1012: 유기농 배추 BFS https://www.acmicpc.net/problem/1012  
 1158: 요세푸스 문제 https://www.acmicpc.net/problem/1158  
 1181: 단어 정렬 String, Sort https://www.acmicpc.net/problem/1181  
