@@ -1,30 +1,26 @@
-﻿// 20.11.18. 수
-// 6603: 로또 https://www.acmicpc.net/problem/6603
+﻿// 20.11.19. 목
+// 1182: 부분수열의 합 https://www.acmicpc.net/problem/1182
 // 백트래킹
 #include <iostream>
-#include <vector>
 
 using namespace std;
 
-int k;
-int choice[13];
-vector<int> lotto;
+int arr[20];
+int n, s, cnt, answer, sum;
 
-void makeLotto(int count, int start)
+void makeParti(int size, int start)
 {
-	if (count == 6)
+	if (size == cnt)
 	{
-		for (int x : lotto)
-			cout << x << " ";
-		cout << "\n";
+		if (sum == s) answer++;
 		return;
 	}
 
-	for (int i = start; i < k; ++i)
+	for (int i = start; i < n; ++i)
 	{
-		lotto.push_back(choice[i]);
-		makeLotto(count + 1, i + 1);
-		lotto.pop_back();
+		sum += arr[i];
+		makeParti(size + 1, i + 1);
+		sum -= arr[i];
 	}
 }
 
@@ -33,24 +29,23 @@ int main()
 	ios::sync_with_stdio(0);
 	cout.tie(0); cin.tie(0);
 
-	while (1)
+	cin >> n >> s;
+
+	for (int i = 0; i < n; ++i)
+		cin >> arr[i];
+
+	for (cnt = 1; cnt <= n; ++cnt)
 	{
-		cin >> k;
-		if (k == 0) break;
-
-		lotto.clear();
-
-		for (int i = 0; i < k; ++i)
-			cin >> choice[i];
-
-		for (int i = 0; i <= k - 6; ++i)
+		sum = 0;
+		for (int i = 0; i <= n - cnt; ++i)
 		{
-			lotto.push_back(choice[i]);
-			makeLotto(1, i + 1);
-			lotto.pop_back();
+			sum += arr[i];
+			makeParti(1, i + 1);
+			sum -= arr[i];
 		}
-		cout << "\n";
 	}
+
+	cout << answer;
 
 	return 0;
 }
