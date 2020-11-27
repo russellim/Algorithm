@@ -1,6 +1,6 @@
 ﻿// 20.11.24. 화
 // 15686: 치킨 배달 https://www.acmicpc.net/problem/15686
-// 브루트포스
+// 브루트포스, 백트래킹
 #include <iostream>
 #include <vector>
 #include <algorithm>
