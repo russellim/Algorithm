@@ -6,6 +6,7 @@ https://solved.ac/profile/neneg273
 1002: 터렛 Math https://www.acmicpc.net/problem/1002  
 1010: 다리 놓기 Math https://www.acmicpc.net/problem/1010  
 1012: 유기농 배추 BFS https://www.acmicpc.net/problem/1012  
+1018: 체스판 다시 칠하기 BF https://www.acmicpc.net/problem/1018  
 1158: 요세푸스 문제 https://www.acmicpc.net/problem/1158  
 1181: 단어 정렬 String, Sort https://www.acmicpc.net/problem/1181  
 1182: 부분수열의 합 BT https://www.acmicpc.net/problem/1182  
