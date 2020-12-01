@@ -34,6 +34,7 @@ https://solved.ac/profile/neneg273
 2751: 수 정렬하기 2 MergeSort https://www.acmicpc.net/problem/2751  
 2775: 부녀회장이 될테야 DP https://www.acmicpc.net/problem/2775  
 2839: 설탕 배달 Greedy, DP https://www.acmicpc.net/problem/2839  
+4948: 베르트랑 공준 https://www.acmicpc.net/problem/4948  
 5430: AC Deque https://www.acmicpc.net/problem/5430  
 6603: 로또 BT https://www.acmicpc.net/problem/6603  
 7576: 토마토 BFS https://www.acmicpc.net/problem/7576  
