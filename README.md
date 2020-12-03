@@ -5,6 +5,7 @@ https://solved.ac/profile/neneg273
 ## BOJ
 1002: 터렛 Math https://www.acmicpc.net/problem/1002  
 1010: 다리 놓기 Math https://www.acmicpc.net/problem/1010  
+1011: Fly me to the Alpha Centauri Math https://www.acmicpc.net/problem/1011  
 1012: 유기농 배추 BFS https://www.acmicpc.net/problem/1012  
 1018: 체스판 다시 칠하기 BF https://www.acmicpc.net/problem/1018  
 1158: 요세푸스 문제 https://www.acmicpc.net/problem/1158  
