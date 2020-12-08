@@ -78,7 +78,7 @@ https://solved.ac/profile/neneg273
 kakao 2018_비밀지도 https://programmers.co.kr/learn/courses/30/lessons/17681  
 kakao 2018_다트 게임 https://programmers.co.kr/learn/courses/30/lessons/17682  
 kakao 2019_실패율 https://programmers.co.kr/learn/courses/30/lessons/42889  
-kakao 2019겨울인턴_크레인 인형뽑기 게임 https://programmers.co.kr/learn/courses/30/lessons/64061  
+kakao 2019인턴_크레인 인형뽑기 게임 https://programmers.co.kr/learn/courses/30/lessons/64061  
 kakao 2020인턴_키패드 누르기 https://programmers.co.kr/learn/courses/30/lessons/67256  
 #### Level 2
 124 나라의 숫자  https://programmers.co.kr/learn/courses/30/lessons/12899  
@@ -104,4 +104,5 @@ kakap 2020인턴_수식 최대화 https://programmers.co.kr/learn/courses/30/les
 kakao 2018_추석 트래픽 https://programmers.co.kr/learn/courses/30/lessons/17676  
 kakao 2018_셔틀버스 https://programmers.co.kr/learn/courses/30/lessons/17678  
 kakao 2019_길 찾기 게임 Tree https://programmers.co.kr/learn/courses/30/lessons/42892  
+kakao 2019인턴_불량 사용자 BT https://programmers.co.kr/learn/courses/30/lessons/64064  
 kakao 2020_좌물쇠와 열쇠 https://programmers.co.kr/learn/courses/30/lessons/60059  
