@@ -66,7 +66,7 @@ https://solved.ac/profile/neneg273
 14889: 스타트와 링크 BT https://www.acmicpc.net/problem/14889  
 15649: N과 M (1) BT https://www.acmicpc.net/problem/15649  
 15686: 치킨 배달 BT https://www.acmicpc.net/problem/15686  
-15810: 풍선 공장 BinarySearch https://www.acmicpc.net/problem/15810  
+15810: 풍선 공장 BS https://www.acmicpc.net/problem/15810  
   
   
 ## programmers
@@ -104,5 +104,6 @@ kakap 2020인턴_수식 최대화 https://programmers.co.kr/learn/courses/30/les
 kakao 2018_추석 트래픽 https://programmers.co.kr/learn/courses/30/lessons/17676  
 kakao 2018_셔틀버스 https://programmers.co.kr/learn/courses/30/lessons/17678  
 kakao 2019_길 찾기 게임 Tree https://programmers.co.kr/learn/courses/30/lessons/42892  
+kakao 2019인턴_징검다리 건너기 BS https://programmers.co.kr/learn/courses/30/lessons/64062  
 kakao 2019인턴_불량 사용자 BT https://programmers.co.kr/learn/courses/30/lessons/64064  
 kakao 2020_좌물쇠와 열쇠 https://programmers.co.kr/learn/courses/30/lessons/60059  
