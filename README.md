@@ -107,3 +107,4 @@ kakao 2019_길 찾기 게임 Tree https://programmers.co.kr/learn/courses/30/les
 kakao 2019인턴_징검다리 건너기 BS https://programmers.co.kr/learn/courses/30/lessons/64062  
 kakao 2019인턴_불량 사용자 BT https://programmers.co.kr/learn/courses/30/lessons/64064  
 kakao 2020_좌물쇠와 열쇠 https://programmers.co.kr/learn/courses/30/lessons/60059  
+kakao 2020_기둥과 보 설치 https://programmers.co.kr/learn/courses/30/lessons/60061  
