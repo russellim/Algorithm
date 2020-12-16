@@ -37,6 +37,7 @@ https://solved.ac/profile/neneg273
 2750: 수 정렬하기 HeapSort https://www.acmicpc.net/problem/2750  
 2751: 수 정렬하기 2 MergeSort https://www.acmicpc.net/problem/2751  
 2775: 부녀회장이 될테야 DP https://www.acmicpc.net/problem/2775  
+2805: 나무 자르기 BS https://www.acmicpc.net/problem/2805  
 2839: 설탕 배달 Greedy, DP https://www.acmicpc.net/problem/2839  
 4948: 베르트랑 공준 https://www.acmicpc.net/problem/4948  
 5430: AC Deque https://www.acmicpc.net/problem/5430  
