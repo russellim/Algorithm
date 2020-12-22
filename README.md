@@ -29,6 +29,7 @@ https://solved.ac/profile/neneg273
 2178: 미로 탐색 BFS https://www.acmicpc.net/problem/2178  
 2231: 분해합 BF https://www.acmicpc.net/problem/2231  
 2293: 동전 1 DP https://www.acmicpc.net/problem/2293  
+2468: 안전 영역 BFS https://www.acmicpc.net/problem/2468  
 2485: 가로수 https://www.acmicpc.net/problem/2485  
 2490: 윷놀이 https://www.acmicpc.net/problem/2490  
 2579: 계단 오르기 DP https://www.acmicpc.net/problem/2579  
