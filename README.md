@@ -15,6 +15,7 @@ https://solved.ac/profile/neneg273
 1260: DFS와 BFS https://www.acmicpc.net/problem/1260  
 1389: 케빈 베이컨의 6단계 법칙 BFS https://www.acmicpc.net/problem/1389  
 1406: 에디터 List https://www.acmicpc.net/problem/1406  
+1436: 영화감독 숌 https://www.acmicpc.net/problem/1436  
 1463: 1로 만들기 DP https://www.acmicpc.net/problem/1463  
 1476: 날짜 계산 https://www.acmicpc.net/problem/1476  
 1697: 숨바꼭질 BFS https://www.acmicpc.net/problem/1697  
