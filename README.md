@@ -35,6 +35,7 @@ https://solved.ac/profile/neneg273
 2485: 가로수 https://www.acmicpc.net/problem/2485  
 2490: 윷놀이 https://www.acmicpc.net/problem/2490  
 2579: 계단 오르기 DP https://www.acmicpc.net/problem/2579  
+2583: 영역 구하기 BFS https://www.acmicpc.net/problem/2583  
 2606: 바이러스 DFS https://www.acmicpc.net/problem/2606  
 2667: 단지번호붙이기 BFS https://www.acmicpc.net/problem/2667  
 2750: 수 정렬하기 HeapSort https://www.acmicpc.net/problem/2750  
