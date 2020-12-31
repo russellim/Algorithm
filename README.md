@@ -19,6 +19,7 @@ https://solved.ac/profile/neneg273
 1463: 1로 만들기 DP https://www.acmicpc.net/problem/1463  
 1476: 날짜 계산 https://www.acmicpc.net/problem/1476  
 1697: 숨바꼭질 BFS https://www.acmicpc.net/problem/1697  
+1699: 제곱수의 합 DP https://www.acmicpc.net/problem/1699  
 1753: 최단경로 Dijkstra https://www.acmicpc.net/problem/1753  
 1874: 스택 수열 Stack https://www.acmicpc.net/problem/1874  
 1912: 연속합 DP https://www.acmicpc.net/problem/1912  
