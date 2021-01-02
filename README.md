@@ -76,6 +76,7 @@ https://solved.ac/profile/neneg273
 11728: 배열 합치기 MergeSort https://www.acmicpc.net/problem/11728  
 11931: 수 정렬하기 4 Sort https://www.acmicpc.net/problem/11931  
 13458: 시험 감독 Math https://www.acmicpc.net/problem/13458  
+14500: 테트로미노 https://www.acmicpc.net/problem/14500  
 14501: 퇴사 DP https://www.acmicpc.net/problem/14501  
 14502: 연구소 DFS https://www.acmicpc.net/problem/14502  
 14503: 로봇 청소기 https://www.acmicpc.net/problem/14503  
