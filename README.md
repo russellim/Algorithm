@@ -73,6 +73,7 @@ https://solved.ac/profile/neneg273
 11055: 가장 큰 증가 부분 수열 DP https://www.acmicpc.net/problem/11055  
 11057: 오르막 수 DP https://www.acmicpc.net/problem/11057  
 11403: 경로 찾기 BFS https://www.acmicpc.net/problem/11403  
+11653: 소인수분해 https://www.acmicpc.net/problem/11653  
 11659: 구간 합 구하기 4 부분합 https://www.acmicpc.net/problem/11659  
 11724: 연결 요소의 개수 BFS https://www.acmicpc.net/problem/11724  
 11728: 배열 합치기 MergeSort https://www.acmicpc.net/problem/11728  
