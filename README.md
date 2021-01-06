@@ -53,6 +53,7 @@ https://solved.ac/profile/neneg273
 6603: 로또 BT https://www.acmicpc.net/problem/6603  
 7576: 토마토 BFS https://www.acmicpc.net/problem/7576  
 7568: 덩치 BF https://www.acmicpc.net/problem/7568  
+7569: 토마토 BFS https://www.acmicpc.net/problem/7569  
 9020: 골드바흐의 추측 https://www.acmicpc.net/problem/9020  
 9251: LCS DP https://www.acmicpc.net/problem/9251  
 9465: 스티커 DP https://www.acmicpc.net/problem/9465  
