@@ -33,6 +33,7 @@ https://solved.ac/profile/neneg273
 1991: 트리 순회 Tree https://www.acmicpc.net/problem/1991  
 2156: 포도주 시식 DP https://www.acmicpc.net/problem/2156  
 2178: 미로 탐색 BFS https://www.acmicpc.net/problem/2178  
+2217: 로프 https://www.acmicpc.net/problem/2217  
 2231: 분해합 BF https://www.acmicpc.net/problem/2231  
 2293: 동전 1 DP https://www.acmicpc.net/problem/2293  
 2468: 안전 영역 BFS https://www.acmicpc.net/problem/2468  
