@@ -19,11 +19,11 @@ int main()
         cin >> v[i];
         dp[i] = v[i];
     }
-    for (int i = 0; i < n; ++i)
+    for (int i = 1; i < n; ++i)
     {
         for (int j = 0; j < i; ++j)
         {
-            if (v[i] > v[j])
+            if (v[i] > v[j]) // 뒤 > 앞.
             {
                 dp[i] = max(dp[j] + v[i], dp[i]);
             }
