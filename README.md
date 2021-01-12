@@ -80,6 +80,7 @@ https://solved.ac/profile/neneg273
 11659: 구간 합 구하기 4 부분합 https://www.acmicpc.net/problem/11659  
 11724: 연결 요소의 개수 BFS https://www.acmicpc.net/problem/11724  
 11728: 배열 합치기 MergeSort https://www.acmicpc.net/problem/11728  
+11866: 요세푸스 문제 0 https://www.acmicpc.net/problem/11866  
 11931: 수 정렬하기 4 Sort https://www.acmicpc.net/problem/11931  
 13458: 시험 감독 Math https://www.acmicpc.net/problem/13458  
 14500: 테트로미노 https://www.acmicpc.net/problem/14500  
