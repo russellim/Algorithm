@@ -73,6 +73,7 @@ https://solved.ac/profile/neneg273
 11051: 이항 계수 2 DP https://www.acmicpc.net/problem/11051  
 11052: 카드 구매하기 DP https://www.acmicpc.net/problem/11052  
 11053: 가장 긴 증가하는 부분 수열 DP https://www.acmicpc.net/problem/11053  
+11054: 가장 긴 바이토닉 부분 수열 DP https://www.acmicpc.net/problem/11054  
 11055: 가장 큰 증가 부분 수열 DP https://www.acmicpc.net/problem/11055  
 11057: 오르막 수 DP https://www.acmicpc.net/problem/11057  
 11403: 경로 찾기 BFS https://www.acmicpc.net/problem/11403  
