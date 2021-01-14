@@ -18,6 +18,7 @@ https://solved.ac/profile/neneg273
 1436: 영화감독 숌 https://www.acmicpc.net/problem/1436  
 1463: 1로 만들기 DP https://www.acmicpc.net/problem/1463  
 1476: 날짜 계산 https://www.acmicpc.net/problem/1476  
+1541: 잃어버린 괄호 https://www.acmicpc.net/problem/1541  
 1654: 랜선 자르기 BS https://www.acmicpc.net/problem/1654  
 1676: 팩토리얼 0의 개수 https://www.acmicpc.net/problem/1676  
 1697: 숨바꼭질 BFS https://www.acmicpc.net/problem/1697  
