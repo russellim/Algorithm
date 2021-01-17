@@ -82,7 +82,11 @@ int main()
         Diceroll(dice, cmd);
         cout << dice[1] << "\n";
         if (mapp[pos.first][pos.second] == 0) mapp[pos.first][pos.second] = dice[3];
-        else dice[3] = mapp[pos.first][pos.second];
+        else
+        {
+            dice[3] = mapp[pos.first][pos.second];
+            mapp[pos.first][pos.second] = 0;
+        }
     }
 
     return 0;
