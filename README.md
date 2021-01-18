@@ -82,6 +82,7 @@ https://solved.ac/profile/neneg273
 11403: 경로 찾기 BFS https://www.acmicpc.net/problem/11403  
 11653: 소인수분해 https://www.acmicpc.net/problem/11653  
 11659: 구간 합 구하기 4 부분합 https://www.acmicpc.net/problem/11659  
+11722: 가장 긴 감소하는 부분 수열 DP https://www.acmicpc.net/problem/11722  
 11724: 연결 요소의 개수 BFS https://www.acmicpc.net/problem/11724  
 11728: 배열 합치기 MergeSort https://www.acmicpc.net/problem/11728  
 11866: 요세푸스 문제 0 https://www.acmicpc.net/problem/11866  
