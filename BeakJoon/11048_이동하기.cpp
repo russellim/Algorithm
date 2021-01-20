@@ -14,19 +14,16 @@ int main()
     int n, m;
     cin >> n >> m;
     vector<vector<int> > mapp(n, vector<int>(m));
-    for (int i = 0; i < n; ++i) for (int j = 0; j < m; ++j) cin >> mapp[i][j];
 
     for (int i = 0; i < n; ++i)
     {
         for (int j = 0; j < m; ++j)
         {
+            cin >> mapp[i][j];
             if (i == 0 && j == 0) continue;
             else if (i == 0) mapp[i][j] += mapp[i][j - 1];
             else if (j == 0) mapp[i][j] += mapp[i - 1][j];
-            else
-            {
-                mapp[i][j] += max({ mapp[i - 1][j], mapp[i][j - 1], mapp[i - 1][j - 1] });
-            }
+            else mapp[i][j] += max({ mapp[i - 1][j], mapp[i][j - 1], mapp[i - 1][j - 1] });
         }
     }
     cout << mapp[n - 1][m - 1];
