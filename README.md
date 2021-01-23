@@ -32,6 +32,7 @@ https://solved.ac/profile/neneg273
 1966: 프린터 큐 Queue https://www.acmicpc.net/problem/1966  
 1987: 알파벳 DFS https://www.acmicpc.net/problem/1987  
 1991: 트리 순회 Tree https://www.acmicpc.net/problem/1991  
+1992: 쿼드트리 Recursion https://www.acmicpc.net/problem/1992  
 2108: 통계학 https://www.acmicpc.net/problem/2108  
 2156: 포도주 시식 DP https://www.acmicpc.net/problem/2156  
 2178: 미로 탐색 BFS https://www.acmicpc.net/problem/2178  
