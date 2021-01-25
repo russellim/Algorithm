@@ -27,6 +27,7 @@ https://solved.ac/profile/neneg273
 1874: 스택 수열 Stack https://www.acmicpc.net/problem/1874  
 1912: 연속합 DP https://www.acmicpc.net/problem/1912  
 1920: 수 찾기 BinarySearch https://www.acmicpc.net/problem/1920  
+1927: 최소 힙 https://www.acmicpc.net/problem/1927  
 1931: 회의실배정 Sort https://www.acmicpc.net/problem/1931  
 1932: 정수 삼각형 DP https://www.acmicpc.net/problem/1932  
 1966: 프린터 큐 Queue https://www.acmicpc.net/problem/1966  
