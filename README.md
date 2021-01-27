@@ -41,6 +41,7 @@ https://solved.ac/profile/neneg273
 2217: 로프 https://www.acmicpc.net/problem/2217  
 2231: 분해합 BF https://www.acmicpc.net/problem/2231  
 2293: 동전 1 DP https://www.acmicpc.net/problem/2293  
+2294: 동전 2 DP https://www.acmicpc.net/problem/2294  
 2468: 안전 영역 BFS https://www.acmicpc.net/problem/2468  
 2485: 가로수 https://www.acmicpc.net/problem/2485  
 2490: 윷놀이 https://www.acmicpc.net/problem/2490  
