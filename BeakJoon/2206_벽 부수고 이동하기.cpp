@@ -1,4 +1,4 @@
-﻿// 21.01.27. 수
+﻿// 21.01.28. 목
 // 2206: 벽 부수고 이동하기 https://www.acmicpc.net/problem/2206
 // BFS.
 #include <iostream>
