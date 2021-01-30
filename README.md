@@ -23,6 +23,7 @@ https://solved.ac/profile/neneg273
 1676: 팩토리얼 0의 개수 https://www.acmicpc.net/problem/1676  
 1697: 숨바꼭질 BFS https://www.acmicpc.net/problem/1697  
 1699: 제곱수의 합 DP https://www.acmicpc.net/problem/1699  
+1717: 집합의 표현 https://www.acmicpc.net/problem/1717  
 1753: 최단경로 Dijkstra https://www.acmicpc.net/problem/1753  
 1874: 스택 수열 Stack https://www.acmicpc.net/problem/1874  
 1912: 연속합 DP https://www.acmicpc.net/problem/1912  
