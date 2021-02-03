@@ -43,6 +43,7 @@ https://solved.ac/profile/neneg273
 2206: 벽 부수고 이동하기 BFS https://www.acmicpc.net/problem/2206  
 2217: 로프 https://www.acmicpc.net/problem/2217  
 2231: 분해합 BF https://www.acmicpc.net/problem/2231  
+2252: 줄 세우기 TopologicalSort https://www.acmicpc.net/problem/2252  
 2293: 동전 1 DP https://www.acmicpc.net/problem/2293  
 2294: 동전 2 DP https://www.acmicpc.net/problem/2294  
 2468: 안전 영역 BFS https://www.acmicpc.net/problem/2468  
