@@ -1,8 +1,6 @@
-﻿// 21.02.05. 금
+﻿// 21.02.06. 토
 // 13460: 구슬 탈출 2 https://www.acmicpc.net/problem/13460
 // BFS.
-
-// 시간초과! 반례도 다시 살펴볼것.
 #include <iostream>
 #include <vector>
 #include <queue>
@@ -26,6 +24,15 @@ int n, m;
 vector<vector<char> > mapp;
 Coord InitR, InitB;
 
+bool CheckPosCondition(char* pos, vector<char> conditions)
+{
+    for (int i = 0; i < conditions.size(); ++i)
+    {
+        if (*pos == conditions[i]) return true;
+    }
+    return false;
+}
+
 CoordState MoveObj(Coord R, Coord B, int d)
 {
     bool RGoal = false;
@@ -35,9 +42,9 @@ CoordState MoveObj(Coord R, Coord B, int d)
         Coord nextR = R + direction[d].first;
         Coord nextB = B + direction[d].first;
 
-        while (nextR != B && (mapp[nextR.first][nextR.second] == '.' || mapp[nextR.first][nextR.second] == 'O'))
+        while (nextR != B && CheckPosCondition(&mapp[nextR.first][nextR.second], { '.', 'O' }))
         {
-            if (mapp[nextR.first][nextR.second] == 'O')
+            if (CheckPosCondition(&mapp[nextR.first][nextR.second], { 'O' }))
             {
                 RGoal = true;
                 R = { -1, -1 };
@@ -47,9 +54,9 @@ CoordState MoveObj(Coord R, Coord B, int d)
             R = nextR;
             nextR = R + direction[d].first;
         }
-        while (nextB != R && (mapp[nextB.first][nextB.second] == '.' || mapp[nextB.first][nextB.second] == 'O'))
+        while (nextB != R && CheckPosCondition(&mapp[nextB.first][nextB.second], { '.', 'O' }))
         {
-            if (mapp[nextB.first][nextB.second] == 'O') return { R, B, d, -1 };
+            if (CheckPosCondition(&mapp[nextB.first][nextB.second], { 'O' })) return { R, B, d, -1 };
             IsMove = true;
             B = nextB;
             nextB = B + direction[d].first;
@@ -78,16 +85,18 @@ int bfs()
             // 0. 온 방향의 반대방향은 탐색 X.
             if (!bIsFirstSearch && i == d) continue;
             // 1. 뚫린 방향 찾기.
-            Coord next = nowR + direction[i].first;
-            if (mapp[next.first][next.second] == '#') continue;
+            Coord nextR = nowR + direction[i].first;
+            Coord nextB = nowB + direction[i].first;
+            if (mapp[nextR.first][nextR.second] == '#' && mapp[nextB.first][nextB.second] == '#') continue;
             // 2. 찾은 방향으로 R B 이동.
             CoordState CurState = MoveObj(nowR, nowB, i);
             if (CurState.count == 0)
             {
                 if (nowR == CurState.R && nowB == CurState.B) continue;
+                if (count + 1 > 10) continue;
                 q.push({ CurState.R, CurState.B, direction[i].second, count + 1 });
             }
-            else if (CurState.count == 1) return count + 1;
+            else if (CurState.count == 1 && count + 1 <= 10) return count + 1;
         }
         bIsFirstSearch = false;
     }
