@@ -80,6 +80,7 @@ https://solved.ac/profile/neneg273
 10814: 나이순 정렬 StableSort https://www.acmicpc.net/problem/10814  
 10815: 숫자 카드 Sort https://www.acmicpc.net/problem/10815  
 10816: 숫자 카드 2 Search https://www.acmicpc.net/problem/10816  
+10819: 차이를 최대로 BT https://www.acmicpc.net/problem/10819  
 10844: 쉬운 계단 수 DP https://www.acmicpc.net/problem/10844  
 10867: 중복 빼고 정렬하기 Vector https://www.acmicpc.net/problem/10867  
 10953: A+B - 6 String https://www.acmicpc.net/problem/10953  
