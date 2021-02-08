@@ -27,6 +27,7 @@ https://solved.ac/profile/neneg273
 1717: 집합의 표현 https://www.acmicpc.net/problem/1717  
 1753: 최단경로 Dijkstra https://www.acmicpc.net/problem/1753  
 1764: 듣보잡 BS https://www.acmicpc.net/problem/1764  
+1780: 종이의 개수 분할정복 https://www.acmicpc.net/problem/1780  
 1874: 스택 수열 Stack https://www.acmicpc.net/problem/1874  
 1912: 연속합 DP https://www.acmicpc.net/problem/1912  
 1920: 수 찾기 BinarySearch https://www.acmicpc.net/problem/1920  
@@ -36,7 +37,7 @@ https://solved.ac/profile/neneg273
 1966: 프린터 큐 Queue https://www.acmicpc.net/problem/1966  
 1987: 알파벳 DFS https://www.acmicpc.net/problem/1987  
 1991: 트리 순회 Tree https://www.acmicpc.net/problem/1991  
-1992: 쿼드트리 Recursion https://www.acmicpc.net/problem/1992  
+1992: 쿼드트리 분할정복 https://www.acmicpc.net/problem/1992  
 2108: 통계학 https://www.acmicpc.net/problem/2108  
 2156: 포도주 시식 DP https://www.acmicpc.net/problem/2156  
 2167: 2차원 배열의 합 https://www.acmicpc.net/problem/2167  
