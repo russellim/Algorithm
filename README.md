@@ -13,6 +13,7 @@ https://solved.ac/profile/neneg273
 1158: 요세푸스 문제 https://www.acmicpc.net/problem/1158  
 1181: 단어 정렬 String, Sort https://www.acmicpc.net/problem/1181  
 1182: 부분수열의 합 BT https://www.acmicpc.net/problem/1182  
+1197: 최소 스패닝 트리 MST https://www.acmicpc.net/problem/1197  
 1260: DFS와 BFS https://www.acmicpc.net/problem/1260  
 1389: 케빈 베이컨의 6단계 법칙 BFS https://www.acmicpc.net/problem/1389  
 1406: 에디터 List https://www.acmicpc.net/problem/1406  
