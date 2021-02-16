@@ -70,6 +70,7 @@ https://solved.ac/profile/neneg273
 4948: 베르트랑 공준 https://www.acmicpc.net/problem/4948  
 4963: 섬의 개수 BFS https://www.acmicpc.net/problem/4963  
 5430: AC Deque https://www.acmicpc.net/problem/5430  
+5525: IOIOI KMP https://www.acmicpc.net/problem/5525  
 5532: 방학 숙제 https://www.acmicpc.net/problem/5532  
 6603: 로또 BT https://www.acmicpc.net/problem/6603  
 7562: 나이트의 이동 BFS https://www.acmicpc.net/problem/7562  
