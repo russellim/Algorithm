@@ -32,6 +32,7 @@ https://solved.ac/profile/neneg273
 1753: 최단경로 Dijkstra https://www.acmicpc.net/problem/1753  
 1764: 듣보잡 BS https://www.acmicpc.net/problem/1764  
 1780: 종이의 개수 분할정복 https://www.acmicpc.net/problem/1780  
+1786: 찾기 KMP https://www.acmicpc.net/problem/1786  
 1874: 스택 수열 Stack https://www.acmicpc.net/problem/1874  
 1912: 연속합 DP https://www.acmicpc.net/problem/1912  
 1920: 수 찾기 BinarySearch https://www.acmicpc.net/problem/1920  
