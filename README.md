@@ -73,6 +73,7 @@ https://solved.ac/profile/neneg273
 5430: AC Deque https://www.acmicpc.net/problem/5430  
 5525: IOIOI KMP https://www.acmicpc.net/problem/5525  
 5532: 방학 숙제 https://www.acmicpc.net/problem/5532  
+6064: 카잉 달력 Math https://www.acmicpc.net/problem/6064  
 6603: 로또 BT https://www.acmicpc.net/problem/6603  
 7562: 나이트의 이동 BFS https://www.acmicpc.net/problem/7562  
 7576: 토마토 BFS https://www.acmicpc.net/problem/7576  
