@@ -7,7 +7,7 @@
 
 using namespace std;
 
-namespace BOJ_9375
+namespace BOJ_11286
 {
 	void Solution()
 	{
@@ -53,7 +53,7 @@ int main()
 	ios_base::sync_with_stdio(0);
 	cin.tie(0); cout.tie(0);
 
-	BOJ_9375::Solution();
+	BOJ_11286::Solution();
 
 	return 0;
 }
