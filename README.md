@@ -127,6 +127,7 @@ https://solved.ac/profile/neneg273
 15686: 치킨 배달 BT https://www.acmicpc.net/problem/15686  
 15810: 풍선 공장 BS https://www.acmicpc.net/problem/15810  
 15829: Hashing https://www.acmicpc.net/problem/15829  
+17626: Four Squares DP https://www.acmicpc.net/problem/17626  
 18111: 마인크래프트 BF https://www.acmicpc.net/problem/18111  
 18870: 좌표 압축 Sort https://www.acmicpc.net/problem/18870  
   
