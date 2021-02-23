@@ -54,6 +54,7 @@ https://solved.ac/profile/neneg273
 2252: 줄 세우기 TopologicalSort https://www.acmicpc.net/problem/2252  
 2293: 동전 1 DP https://www.acmicpc.net/problem/2293  
 2294: 동전 2 DP https://www.acmicpc.net/problem/2294  
+2407: 조합 Math https://www.acmicpc.net/problem/2407  
 2468: 안전 영역 BFS https://www.acmicpc.net/problem/2468  
 2485: 가로수 https://www.acmicpc.net/problem/2485  
 2490: 윷놀이 https://www.acmicpc.net/problem/2490  
