@@ -129,6 +129,7 @@ https://solved.ac/profile/neneg273
 15654: N과 M (5) BT https://www.acmicpc.net/problem/15654  
 15657: N과 M (8) BT https://www.acmicpc.net/problem/15657  
 15663: N과 M (9) BT https://www.acmicpc.net/problem/15663  
+15666: N과 M (12) BT https://www.acmicpc.net/problem/15666  
 15686: 치킨 배달 BT https://www.acmicpc.net/problem/15686  
 15810: 풍선 공장 BS https://www.acmicpc.net/problem/15810  
 15829: Hashing https://www.acmicpc.net/problem/15829  
