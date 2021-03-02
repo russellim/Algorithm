@@ -2,10 +2,10 @@
 // 11725: 트리의 부모 찾기 https://www.acmicpc.net/problem/11725
 // 트리, BFS, DFS.
 
-// 메모리 초과.
+// 83% 시간초과.
 
 #include <iostream>
-#include <queue>
+#include <deque>
 #include <vector>
 
 using namespace std;
@@ -13,39 +13,33 @@ using namespace std;
 namespace BOJ_11725
 {
 	vector<int> Tree;
-	queue<pair<int, int> > ReadyNodes;
+	deque<pair<int, int> > ReadyNodes;
 
-	pair<int, int> FindChildAndParent(int a, int b)
+	void InsertTree(int a, int b)
 	{
-		if (Tree[a] == 0 && Tree[b] == 0)
-		{
-			ReadyNodes.push({ a, b });
-			return { -1, -1 };
-		}
-		if (Tree[a] != 0) return { b, a };
-		return { a, b };
-	}
-
-	void InsertTree(int child, int parent)
-	{
-		Tree[child] = parent;
+		if (Tree[a]) Tree[b] = a;
+		else Tree[a] = b;
 	}
 
 	void CheckReadyNodes()
 	{
-		int qSize = ReadyNodes.size();
-		while (qSize--)
+		while (!ReadyNodes.empty())
 		{
-			int a = ReadyNodes.front().first;
-			int b = ReadyNodes.front().second;
-			ReadyNodes.pop();
-			auto node = FindChildAndParent(a, b);
-			if (node.first == -1)
+			deque<pair<int, int> > tempdq;
+			tempdq.swap(ReadyNodes);
+			while (!tempdq.empty())
 			{
-				ReadyNodes.push({ a, b });
-				continue;
+				int a = tempdq.front().first;
+				int b = tempdq.front().second;
+				tempdq.pop_front();
+				if (Tree[a] == 0 && Tree[b] == 0)
+				{
+					// 다음에는 거꾸로 검사.
+					ReadyNodes.push_front({ a, b });
+					continue;
+				}
+				InsertTree(a, b);
 			}
-			InsertTree(node.first, node.second);
 		}
 	}
 
@@ -58,13 +52,15 @@ namespace BOJ_11725
 		for (int i = 0; i < n - 1; ++i)
 		{
 			cin >> a >> b;
-			auto node = FindChildAndParent(a, b);
-			if (node.first != -1)
+			if (Tree[a] == 0 && Tree[b] == 0)
 			{
-				InsertTree(node.first, node.second);
-				CheckReadyNodes();
+				ReadyNodes.push_back({ a, b });
+				continue;
 			}
+			InsertTree(a, b);
 		}
+
+		CheckReadyNodes();
 
 		for (int i = 2; i <= n; ++i)
 		{
