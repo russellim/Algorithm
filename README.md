@@ -177,6 +177,7 @@ kakao 2020_문자열 압축 https://programmers.co.kr/learn/courses/30/lessons/6
 kakao 2020_괄호 변환 https://programmers.co.kr/learn/courses/30/lessons/60058  
 kakap 2020인턴_수식 최대화 https://programmers.co.kr/learn/courses/30/lessons/67257  
 #### Level 3
+힙_디스크 컨트롤러 https://programmers.co.kr/learn/courses/30/lessons/42627  
 DFS/BFS_네트워크 https://programmers.co.kr/learn/courses/30/lessons/43162  
 그래프_가장 먼 노드 BFS https://programmers.co.kr/learn/courses/30/lessons/49189  
 kakao 2018_추석 트래픽 https://programmers.co.kr/learn/courses/30/lessons/17676  
