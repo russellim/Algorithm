@@ -162,6 +162,7 @@ kakao 2020인턴_키패드 누르기 https://programmers.co.kr/learn/courses/30/
 스택/큐_프린터 https://programmers.co.kr/learn/courses/30/lessons/42587  
 힙_더 맵게 https://programmers.co.kr/learn/courses/30/lessons/42626  
 정렬_가장 큰 수 https://programmers.co.kr/learn/courses/30/lessons/42746  
+정렬_H-Index https://programmers.co.kr/learn/courses/30/lessons/42747  
 kakao 2017_카카오프렌즈 컬러링북 https://programmers.co.kr/learn/courses/30/lessons/1829  
 kakao 2018_뉴스 클러스터링  https://programmers.co.kr/learn/courses/30/lessons/17677  
 kakao 2018_프렌즈4블록 https://programmers.co.kr/learn/courses/30/lessons/17679  
