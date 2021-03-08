@@ -9,24 +9,14 @@
 
 using namespace std;
 
-bool cmp(pair<int, int>& a, pair<int, int>& b)
-{
-	return a.first > b.first;
-}
-
 int solution(vector<int> citations) {
 	int answer = 0, count = 0;
 	int size = citations.size();
 
-	vector<pair<int, int> > v;
+	sort(citations.rbegin(), citations.rend());
 	for (int i = 0; i < size; ++i)
 	{
-		v.push_back({ citations[i], i + 1 });
-	}
-	sort(v.begin(), v.end(), cmp);
-	for (int i = 0; i < size; ++i)
-	{
-		if (i >= v[i].first) return i;
+		if (i >= citations[i]) return i;
 	}
 	if (answer == 0) answer = size;
 	return answer;
