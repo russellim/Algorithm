@@ -181,6 +181,7 @@ kakap 2020인턴_수식 최대화 https://programmers.co.kr/learn/courses/30/les
 해시_베스트앨범 https://programmers.co.kr/learn/courses/30/lessons/42579  
 힙_디스크 컨트롤러 https://programmers.co.kr/learn/courses/30/lessons/42627  
 탐욕법_섬 연결하기 https://programmers.co.kr/learn/courses/30/lessons/42861  
+탐욕법_단속카메라 https://programmers.co.kr/learn/courses/30/lessons/42884  
 DFS/BFS_네트워크 https://programmers.co.kr/learn/courses/30/lessons/43162  
 그래프_가장 먼 노드 BFS https://programmers.co.kr/learn/courses/30/lessons/49189  
 kakao 2018_추석 트래픽 https://programmers.co.kr/learn/courses/30/lessons/17676  
