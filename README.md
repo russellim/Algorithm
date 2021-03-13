@@ -185,6 +185,7 @@ kakap 2020인턴_수식 최대화 https://programmers.co.kr/learn/courses/30/les
 DFS/BFS_네트워크 https://programmers.co.kr/learn/courses/30/lessons/43162  
 DFS/BFS_단어 변환 https://programmers.co.kr/learn/courses/30/lessons/43163  
 DFS/BFS_여행경로 https://programmers.co.kr/learn/courses/30/lessons/43164  
+이분탐색_입국심사 https://programmers.co.kr/learn/courses/30/lessons/43238  
 그래프_가장 먼 노드 BFS https://programmers.co.kr/learn/courses/30/lessons/49189  
 kakao 2018_추석 트래픽 https://programmers.co.kr/learn/courses/30/lessons/17676  
 kakao 2018_셔틀버스 https://programmers.co.kr/learn/courses/30/lessons/17678  
