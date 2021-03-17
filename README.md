@@ -37,6 +37,7 @@ https://solved.ac/profile/neneg273
 1786: 찾기 KMP https://www.acmicpc.net/problem/1786  
 1874: 스택 수열 Stack https://www.acmicpc.net/problem/1874  
 1912: 연속합 DP https://www.acmicpc.net/problem/1912  
+1916: 최소비용 구하기 Dijkstra https://www.acmicpc.net/problem/1916  
 1920: 수 찾기 BinarySearch https://www.acmicpc.net/problem/1920  
 1927: 최소 힙 https://www.acmicpc.net/problem/1927  
 1931: 회의실배정 Sort https://www.acmicpc.net/problem/1931  
