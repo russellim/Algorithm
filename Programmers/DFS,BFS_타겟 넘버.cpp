@@ -1,5 +1,5 @@
 ﻿// 21.03.18. 목
-// DFS/BFS_타겟 넘버 https://www.acmicpc.net/problem/43165
+// DFS/BFS_타겟 넘버 https://programmers.co.kr/learn/courses/30/lessons/43165
 #include <iostream>
 #include <string>
 #include <vector>
