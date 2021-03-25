@@ -18,33 +18,23 @@ namespace BOJ_17144
 	int r, c;
 	int nearby[NEARBY_COUNT][2] = { {1,0}, {0, 1}, {-1, 0}, {0, -1} };
 	vector<Coord> airCleanerPos;
-	vector<Coord> storeNearby;
 
 	bool IsRange(int x, int y)
 	{
 		return (x >= 0 && y >= 0 && x < r&& y < c);
 	}
 
-	int CheckDiffusibleArea(vvi& area, int& x, int& y)
+	int CheckDiffusibleArea(vvi& area, vvi& diffuseDust, int& x, int& y, int div)
 	{
 		int count = 0;
-		storeNearby.clear();
 		for (int i = 0; i < NEARBY_COUNT; ++i)
 		{
 			int newX = x + nearby[i][0], newY = y + nearby[i][1];
 			if (!IsRange(newX, newY) || area[newX][newY] == AIR_CLEANER) continue;
 			count++;
-			storeNearby.push_back({ newX, newY });
+			diffuseDust[newX][newY] += div;
 		}
 		return count;
-	}
-
-	void StoreDiffuseDust(vvi& diffuseDust, int& div)
-	{
-		for (int i = 0; i < storeNearby.size(); ++i)
-		{
-			diffuseDust[storeNearby[i].x][storeNearby[i].y] += div;
-		}
 	}
 
 	// 먼지 확산.
@@ -55,10 +45,9 @@ namespace BOJ_17144
 			for (int j = 0; j < c; ++j)
 			{
 				if (area[i][j] == AIR_CLEANER || area[i][j] == EMPTY_AREA) continue;
-				int nearCount = CheckDiffusibleArea(area, i, j);
 				int div = area[i][j] / 5;
+				int nearCount = CheckDiffusibleArea(area, diffuseDust, i, j, div);
 				area[i][j] -= (div * nearCount);
-				StoreDiffuseDust(diffuseDust, div);
 			}
 		}
 
