@@ -23,6 +23,7 @@ https://solved.ac/profile/neneg273
 1436: 영화감독 숌 https://www.acmicpc.net/problem/1436  
 1463: 1로 만들기 DP https://www.acmicpc.net/problem/1463  
 1476: 날짜 계산 https://www.acmicpc.net/problem/1476  
+1504: 특정한 최단 경로 Dijkstra https://www.acmicpc.net/problem/1504  
 1520: 내리막 길 PriorityQueue https://www.acmicpc.net/problem/1520  
 1541: 잃어버린 괄호 https://www.acmicpc.net/problem/1541  
 1620: 나는야 포켓몬 마스터 이다솜 BS https://www.acmicpc.net/problem/1620  
