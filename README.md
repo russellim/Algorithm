@@ -37,6 +37,7 @@ https://solved.ac/profile/neneg273
 1764: 듣보잡 BS https://www.acmicpc.net/problem/1764  
 1780: 종이의 개수 분할정복 https://www.acmicpc.net/problem/1780  
 1786: 찾기 KMP https://www.acmicpc.net/problem/1786  
+1865: 웜홀 벨만포드 https://www.acmicpc.net/problem/1865  
 1874: 스택 수열 Stack https://www.acmicpc.net/problem/1874  
 1912: 연속합 DP https://www.acmicpc.net/problem/1912  
 1916: 최소비용 구하기 Dijkstra https://www.acmicpc.net/problem/1916  
