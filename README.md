@@ -9,6 +9,7 @@ https://solved.ac/profile/neneg273
 1012: 유기농 배추 BFS https://www.acmicpc.net/problem/1012  
 1018: 체스판 다시 칠하기 BF https://www.acmicpc.net/problem/1018  
 1021: 회전하는 큐 https://www.acmicpc.net/problem/1021  
+1043: 거짓말 https://www.acmicpc.net/problem/1043  
 1074: Z 분할정복 https://www.acmicpc.net/problem/1074  
 1094: 막대기 https://www.acmicpc.net/problem/1094  
 1107: 리모컨 BF https://www.acmicpc.net/problem/1107  
@@ -22,6 +23,7 @@ https://solved.ac/profile/neneg273
 1436: 영화감독 숌 https://www.acmicpc.net/problem/1436  
 1463: 1로 만들기 DP https://www.acmicpc.net/problem/1463  
 1476: 날짜 계산 https://www.acmicpc.net/problem/1476  
+1504: 특정한 최단 경로 Dijkstra https://www.acmicpc.net/problem/1504  
 1520: 내리막 길 PriorityQueue https://www.acmicpc.net/problem/1520  
 1541: 잃어버린 괄호 https://www.acmicpc.net/problem/1541  
 1620: 나는야 포켓몬 마스터 이다솜 BS https://www.acmicpc.net/problem/1620  
@@ -35,9 +37,11 @@ https://solved.ac/profile/neneg273
 1764: 듣보잡 BS https://www.acmicpc.net/problem/1764  
 1780: 종이의 개수 분할정복 https://www.acmicpc.net/problem/1780  
 1786: 찾기 KMP https://www.acmicpc.net/problem/1786  
+1865: 웜홀 벨만포드 https://www.acmicpc.net/problem/1865  
 1874: 스택 수열 Stack https://www.acmicpc.net/problem/1874  
 1912: 연속합 DP https://www.acmicpc.net/problem/1912  
 1916: 최소비용 구하기 Dijkstra https://www.acmicpc.net/problem/1916  
+1918: 후위 표기식 Stack https://www.acmicpc.net/problem/1918  
 1920: 수 찾기 BinarySearch https://www.acmicpc.net/problem/1920  
 1927: 최소 힙 https://www.acmicpc.net/problem/1927  
 1931: 회의실배정 Sort https://www.acmicpc.net/problem/1931  
@@ -121,8 +125,11 @@ https://solved.ac/profile/neneg273
 11728: 배열 합치기 MergeSort https://www.acmicpc.net/problem/11728  
 11866: 요세푸스 문제 0 https://www.acmicpc.net/problem/11866  
 11931: 수 정렬하기 4 Sort https://www.acmicpc.net/problem/11931  
+12851: 숨바꼭질 2 BFS https://www.acmicpc.net/problem/12851  
+12865: 평범한 배낭 DP https://www.acmicpc.net/problem/12865  
 13458: 시험 감독 Math https://www.acmicpc.net/problem/13458  
 13460: 구슬 탈출 2 BFS https://www.acmicpc.net/problem/13460  
+13549: 숨바꼭질 3 BFS https://www.acmicpc.net/problem/13549  
 14499: 주사위 굴리기 https://www.acmicpc.net/problem/14499  
 14500: 테트로미노 https://www.acmicpc.net/problem/14500  
 14501: 퇴사 DP https://www.acmicpc.net/problem/14501  
@@ -140,6 +147,8 @@ https://solved.ac/profile/neneg273
 15829: Hashing https://www.acmicpc.net/problem/15829  
 16236: 아기 상어 BFS https://www.acmicpc.net/problem/16236  
 16953: A -> B BFS https://www.acmicpc.net/problem/16953  
+17070: 파이프 옮기기 1 BFS https://www.acmicpc.net/problem/17070  
+17144: 미세먼지 안녕! https://www.acmicpc.net/problem/17144  
 17626: Four Squares DP https://www.acmicpc.net/problem/17626  
 18111: 마인크래프트 BF https://www.acmicpc.net/problem/18111  
 18870: 좌표 압축 Sort https://www.acmicpc.net/problem/18870  
