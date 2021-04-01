@@ -148,6 +148,7 @@ https://solved.ac/profile/neneg273
 15810: 풍선 공장 BS https://www.acmicpc.net/problem/15810  
 15829: Hashing https://www.acmicpc.net/problem/15829  
 16236: 아기 상어 BFS https://www.acmicpc.net/problem/16236  
+16928: 뱀과 사다리 게임 BFS https://www.acmicpc.net/problem/16928  
 16953: A -> B BFS https://www.acmicpc.net/problem/16953  
 17070: 파이프 옮기기 1 BFS https://www.acmicpc.net/problem/17070  
 17144: 미세먼지 안녕! https://www.acmicpc.net/problem/17144  
