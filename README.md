@@ -52,6 +52,7 @@ https://solved.ac/profile/neneg273
 1991: 트리 순회 Tree https://www.acmicpc.net/problem/1991  
 1992: 쿼드트리 분할정복 https://www.acmicpc.net/problem/1992  
 2003: 수들의 합 2 부분합 https://www.acmicpc.net/problem/2003  
+2096: 내려가기 DP https://www.acmicpc.net/problem/2096  
 2108: 통계학 https://www.acmicpc.net/problem/2108  
 2156: 포도주 시식 DP https://www.acmicpc.net/problem/2156  
 2167: 2차원 배열의 합 https://www.acmicpc.net/problem/2167  
