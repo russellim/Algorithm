@@ -73,6 +73,7 @@ https://solved.ac/profile/neneg273
 2583: 영역 구하기 BFS https://www.acmicpc.net/problem/2583  
 2606: 바이러스 DFS https://www.acmicpc.net/problem/2606  
 2630: 색종이 만들기 분할정복 https://www.acmicpc.net/problem/2630  
+2638: 치즈 BFS https://www.acmicpc.net/problem/2638  
 2644: 촌수계산 Tree https://www.acmicpc.net/problem/2644  
 2667: 단지번호붙이기 BFS https://www.acmicpc.net/problem/2667  
 2750: 수 정렬하기 HeapSort https://www.acmicpc.net/problem/2750  
