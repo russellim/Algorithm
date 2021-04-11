@@ -1,59 +1,37 @@
 ﻿// 21.04.10. 토
 // 9935: 문자열 폭발 https://www.acmicpc.net/problem/9935
-// 스택.
-
-// 45% 시간초과 Failed.
 #include <iostream>
 #include <vector>
-#include <stack>
 using namespace std;
 
 namespace BOJ_9935
 {
 	void Solution()
 	{
-		string str, key, answer;
+		string str, key, answer, temp;
 		cin >> str >> key;
-		stack<char> st, store;
-		int size = str.size(), pointer = key.size() - 1;
 
-		for (int i = 0; i < size; ++i)
+		for (int i = 0; i < str.size(); ++i)
 		{
-			st.push(str[i]);
-		}
+			answer += str[i];
+			if (answer.size() < key.size()) continue;
+			if (str[i] != key[key.size() - 1]) continue;
 
-		while (!st.empty())
-		{
-			if (key[pointer] == st.top()) pointer--;
-			else
+			int pointer = key.size() - 1;
+			for (int j = answer.size() - 1; j >= 0; --j)
 			{
-				pointer = key.size() - 1;
-				if (key[pointer] == st.top()) pointer--;
-			}
-			store.push(st.top());
-			st.pop();
-			if (pointer == -1)
-			{
-				pointer = key.size() - 1;
-				for (int i = 0; i < key.size(); ++i) store.pop();
-				while (1)
+				if (answer[j] != key[pointer]) break;
+				--pointer;
+				if (pointer < 0)
 				{
-					if (store.empty() || key.find(store.top()) == string::npos) break;
-					st.push(store.top());
-					store.pop();
+					answer.erase(answer.begin() + j, answer.end());
+					break;
 				}
 			}
 		}
 
-		if (store.empty()) cout << "FRULA";
-		else
-		{
-			while (!store.empty())
-			{
-				cout << store.top();
-				store.pop();
-			}
-		}
+		if (answer == "") cout << "FRULA";
+		else cout << answer;
 	}
 }
 

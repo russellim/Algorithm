@@ -103,6 +103,7 @@ https://solved.ac/profile/neneg273
 9465: 스티커 DP https://www.acmicpc.net/problem/9465  
 9655: 돌 게임 https://www.acmicpc.net/problem/9655  
 9663: N-Queen BT https://www.acmicpc.net/problem/9663  
+9935: 문자열 폭발 https://www.acmicpc.net/problem/9935  
 10026: 적록색약 BFS https://www.acmicpc.net/problem/10026  
 10799: 쇠막대기 https://www.acmicpc.net/problem/10799  
 10814: 나이순 정렬 StableSort https://www.acmicpc.net/problem/10814  
