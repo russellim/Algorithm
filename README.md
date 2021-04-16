@@ -67,6 +67,7 @@ https://solved.ac/profile/neneg273
 2407: 조합 Math https://www.acmicpc.net/problem/2407  
 2467: 용액 BS https://www.acmicpc.net/problem/2467  
 2468: 안전 영역 BFS https://www.acmicpc.net/problem/2468  
+2473: 세 용액 https://www.acmicpc.net/problem/2473  
 2485: 가로수 https://www.acmicpc.net/problem/2485  
 2490: 윷놀이 https://www.acmicpc.net/problem/2490  
 2579: 계단 오르기 DP https://www.acmicpc.net/problem/2579  
