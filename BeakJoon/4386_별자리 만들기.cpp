@@ -1,8 +1,6 @@
 ﻿// 21.04.18. 일
 // 4386: 별자리 만들기 https://www.acmicpc.net/problem/4386
-// 크루스칼 알고리즘
-
-// failed. 왜!??!
+// 크루스칼 알고리즘, math(거리 구하는 식이 틀렸었음)
 #include <iostream>
 #include <vector>
 #include <cmath>
@@ -15,40 +13,43 @@ namespace BOJ_4386
 	struct Conn { double dist; int from, to; };
 	vector<vector<pair<double, int> > > conn;
 	vector<int> parent;
-	bool check;
 
 	double GetDistance(Coord& a, Coord& b)
 	{
-		return sqrt(abs(b.x - a.x)) + sqrt(abs(b.y - a.y));
+		double dx = (a.x - b.x) * (a.x - b.x);
+		double dy = (a.y - b.y) * (a.y - b.y);
+		return sqrt(dx + dy);
 	}
 
-	int findParent(int child)
+	int GetParent(int child)
 	{
 		if (child == parent[child]) return child;
-		return parent[child] = findParent(parent[child]);
+		return parent[child] = GetParent(parent[child]);
 	}
 
-	void merge(int from, int to)
+	bool Merge(int from, int to)
 	{
-		check = false;
-		from = findParent(from);
-		to = findParent(to);
+		from = GetParent(from);
+		to = GetParent(to);
 
-		if (from == to) return;
-		parent[from] = to;
-		check = true;
+		if (from == to) return false;	// 사이클 체크.
+
+		// 사이클 아니여서 합침.
+		if (from > to) parent[from] = to;
+		else parent[to] = from;
+		return true;
 	}
 
 	double Cruskal(int n, vector<Conn>& conn)
 	{
-		double res = 0.0;
+		double sum = 0.0;
 		for (int i = 0; i < conn.size(); ++i)
 		{
-			merge(conn[i].from, conn[i].to);
-			if (check) res += conn[i].dist;
+			if (Merge(conn[i].from, conn[i].to))
+				sum += conn[i].dist;
 		}
 
-		return res;
+		return sum;
 	}
 
 	void Solution()
@@ -68,8 +69,7 @@ namespace BOJ_4386
 		{
 			for (int j = i + 1; j < n; ++j)
 			{
-				auto temp = GetDistance(stars[i], stars[j]);
-				conn.push_back({ temp, i, j });
+				conn.push_back({ GetDistance(stars[i], stars[j]), i, j });
 			}
 		}
 
