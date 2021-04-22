@@ -83,6 +83,7 @@ https://solved.ac/profile/neneg273
 2775: 부녀회장이 될테야 DP https://www.acmicpc.net/problem/2775  
 2805: 나무 자르기 BS https://www.acmicpc.net/problem/2805  
 2839: 설탕 배달 Greedy, DP https://www.acmicpc.net/problem/2839  
+2960: 에라토스테네스의 체 https://www.acmicpc.net/problem/2960  
 3190: 뱀 https://www.acmicpc.net/problem/3190  
 4386: 별자리 만들기 MST https://www.acmicpc.net/problem/4386  
 4948: 베르트랑 공준 https://www.acmicpc.net/problem/4948  
