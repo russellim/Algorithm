@@ -139,6 +139,7 @@ https://solved.ac/profile/neneg273
 11724: 연결 요소의 개수 BFS https://www.acmicpc.net/problem/11724  
 11725: 트리의 부모 찾기 DFS https://www.acmicpc.net/problem/11725  
 11728: 배열 합치기 MergeSort https://www.acmicpc.net/problem/11728  
+11779: 최소비용 구하기 2 Dijkstra https://www.acmicpc.net/problem/11779  
 11866: 요세푸스 문제 0 https://www.acmicpc.net/problem/11866  
 11931: 수 정렬하기 4 Sort https://www.acmicpc.net/problem/11931  
 12851: 숨바꼭질 2 BFS https://www.acmicpc.net/problem/12851  
