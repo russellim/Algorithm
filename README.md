@@ -37,6 +37,7 @@ https://solved.ac/profile/neneg273
 1764: 듣보잡 BS https://www.acmicpc.net/problem/1764  
 1780: 종이의 개수 분할정복 https://www.acmicpc.net/problem/1780  
 1786: 찾기 KMP https://www.acmicpc.net/problem/1786  
+1806: 부분합 https://www.acmicpc.net/problem/1806  
 1865: 웜홀 벨만포드 https://www.acmicpc.net/problem/1865  
 1874: 스택 수열 Stack https://www.acmicpc.net/problem/1874  
 1912: 연속합 DP https://www.acmicpc.net/problem/1912  
@@ -47,9 +48,12 @@ https://solved.ac/profile/neneg273
 1931: 회의실배정 Sort https://www.acmicpc.net/problem/1931  
 1932: 정수 삼각형 DP https://www.acmicpc.net/problem/1932  
 1966: 프린터 큐 Queue https://www.acmicpc.net/problem/1966  
+1967: 트리의 지름 DFS https://www.acmicpc.net/problem/1967  
 1987: 알파벳 DFS https://www.acmicpc.net/problem/1987  
 1991: 트리 순회 Tree https://www.acmicpc.net/problem/1991  
 1992: 쿼드트리 분할정복 https://www.acmicpc.net/problem/1992  
+2003: 수들의 합 2 부분합 https://www.acmicpc.net/problem/2003  
+2096: 내려가기 DP https://www.acmicpc.net/problem/2096  
 2108: 통계학 https://www.acmicpc.net/problem/2108  
 2156: 포도주 시식 DP https://www.acmicpc.net/problem/2156  
 2167: 2차원 배열의 합 https://www.acmicpc.net/problem/2167  
@@ -61,7 +65,9 @@ https://solved.ac/profile/neneg273
 2293: 동전 1 DP https://www.acmicpc.net/problem/2293  
 2294: 동전 2 DP https://www.acmicpc.net/problem/2294  
 2407: 조합 Math https://www.acmicpc.net/problem/2407  
+2467: 용액 BS https://www.acmicpc.net/problem/2467  
 2468: 안전 영역 BFS https://www.acmicpc.net/problem/2468  
+2473: 세 용액 https://www.acmicpc.net/problem/2473  
 2485: 가로수 https://www.acmicpc.net/problem/2485  
 2490: 윷놀이 https://www.acmicpc.net/problem/2490  
 2579: 계단 오르기 DP https://www.acmicpc.net/problem/2579  
@@ -69,13 +75,17 @@ https://solved.ac/profile/neneg273
 2583: 영역 구하기 BFS https://www.acmicpc.net/problem/2583  
 2606: 바이러스 DFS https://www.acmicpc.net/problem/2606  
 2630: 색종이 만들기 분할정복 https://www.acmicpc.net/problem/2630  
+2638: 치즈 BFS https://www.acmicpc.net/problem/2638  
+2644: 촌수계산 Tree https://www.acmicpc.net/problem/2644  
 2667: 단지번호붙이기 BFS https://www.acmicpc.net/problem/2667  
 2750: 수 정렬하기 HeapSort https://www.acmicpc.net/problem/2750  
 2751: 수 정렬하기 2 MergeSort https://www.acmicpc.net/problem/2751  
 2775: 부녀회장이 될테야 DP https://www.acmicpc.net/problem/2775  
 2805: 나무 자르기 BS https://www.acmicpc.net/problem/2805  
 2839: 설탕 배달 Greedy, DP https://www.acmicpc.net/problem/2839  
+2960: 에라토스테네스의 체 https://www.acmicpc.net/problem/2960  
 3190: 뱀 https://www.acmicpc.net/problem/3190  
+4386: 별자리 만들기 MST https://www.acmicpc.net/problem/4386  
 4948: 베르트랑 공준 https://www.acmicpc.net/problem/4948  
 4963: 섬의 개수 BFS https://www.acmicpc.net/problem/4963  
 5430: AC Deque https://www.acmicpc.net/problem/5430  
@@ -93,15 +103,19 @@ https://solved.ac/profile/neneg273
 9020: 골드바흐의 추측 https://www.acmicpc.net/problem/9020  
 9205: 맥주 마시면서 걸어가기 BFS https://www.acmicpc.net/problem/9205  
 9251: LCS DP https://www.acmicpc.net/problem/9251  
+9252: LCS 2 DP https://www.acmicpc.net/problem/9252  
 9465: 스티커 DP https://www.acmicpc.net/problem/9465  
+9466: 텀 프로젝트 https://www.acmicpc.net/problem/9466  
 9655: 돌 게임 https://www.acmicpc.net/problem/9655  
 9663: N-Queen BT https://www.acmicpc.net/problem/9663  
+9935: 문자열 폭발 https://www.acmicpc.net/problem/9935  
 10026: 적록색약 BFS https://www.acmicpc.net/problem/10026  
 10799: 쇠막대기 https://www.acmicpc.net/problem/10799  
 10814: 나이순 정렬 StableSort https://www.acmicpc.net/problem/10814  
 10815: 숫자 카드 Sort https://www.acmicpc.net/problem/10815  
 10816: 숫자 카드 2 Search https://www.acmicpc.net/problem/10816  
 10819: 차이를 최대로 BT https://www.acmicpc.net/problem/10819  
+10830: 행렬 제곱 Math https://www.acmicpc.net/problem/10830  
 10844: 쉬운 계단 수 DP https://www.acmicpc.net/problem/10844  
 10867: 중복 빼고 정렬하기 Vector https://www.acmicpc.net/problem/10867  
 10953: A+B - 6 String https://www.acmicpc.net/problem/10953  
@@ -116,6 +130,8 @@ https://solved.ac/profile/neneg273
 11057: 오르막 수 DP https://www.acmicpc.net/problem/11057  
 11286: 절댓값 힙 Heap https://www.acmicpc.net/problem/11286  
 11403: 경로 찾기 BFS https://www.acmicpc.net/problem/11403  
+11404: 플로이드 https://www.acmicpc.net/problem/11404  
+11444: 피보나치 수 6 https://www.acmicpc.net/problem/11444  
 11653: 소인수분해 https://www.acmicpc.net/problem/11653  
 11659: 구간 합 구하기 4 부분합 https://www.acmicpc.net/problem/11659  
 11660: 구간 합 구하기 5 부분합 https://www.acmicpc.net/problem/11660  
@@ -123,10 +139,13 @@ https://solved.ac/profile/neneg273
 11724: 연결 요소의 개수 BFS https://www.acmicpc.net/problem/11724  
 11725: 트리의 부모 찾기 DFS https://www.acmicpc.net/problem/11725  
 11728: 배열 합치기 MergeSort https://www.acmicpc.net/problem/11728  
+11779: 최소비용 구하기 2 Dijkstra https://www.acmicpc.net/problem/11779  
 11866: 요세푸스 문제 0 https://www.acmicpc.net/problem/11866  
 11931: 수 정렬하기 4 Sort https://www.acmicpc.net/problem/11931  
 12851: 숨바꼭질 2 BFS https://www.acmicpc.net/problem/12851  
+12852: 1로 만들기 2 BT,DP https://www.acmicpc.net/problem/12852  
 12865: 평범한 배낭 DP https://www.acmicpc.net/problem/12865  
+13172: Σ Math https://www.acmicpc.net/problem/13172  
 13458: 시험 감독 Math https://www.acmicpc.net/problem/13458  
 13460: 구슬 탈출 2 BFS https://www.acmicpc.net/problem/13460  
 13549: 숨바꼭질 3 BFS https://www.acmicpc.net/problem/13549  
@@ -137,6 +156,7 @@ https://solved.ac/profile/neneg273
 14503: 로봇 청소기 https://www.acmicpc.net/problem/14503  
 14888: 연산자 끼워넣기 BT https://www.acmicpc.net/problem/14888  
 14889: 스타트와 링크 BT https://www.acmicpc.net/problem/14889  
+14938: 서강그라운드 BFS https://www.acmicpc.net/problem/14938  
 15649: N과 M (1) BT https://www.acmicpc.net/problem/15649  
 15654: N과 M (5) BT https://www.acmicpc.net/problem/15654  
 15657: N과 M (8) BT https://www.acmicpc.net/problem/15657  
@@ -146,6 +166,7 @@ https://solved.ac/profile/neneg273
 15810: 풍선 공장 BS https://www.acmicpc.net/problem/15810  
 15829: Hashing https://www.acmicpc.net/problem/15829  
 16236: 아기 상어 BFS https://www.acmicpc.net/problem/16236  
+16928: 뱀과 사다리 게임 BFS https://www.acmicpc.net/problem/16928  
 16953: A -> B BFS https://www.acmicpc.net/problem/16953  
 17070: 파이프 옮기기 1 BFS https://www.acmicpc.net/problem/17070  
 17144: 미세먼지 안녕! https://www.acmicpc.net/problem/17144  
