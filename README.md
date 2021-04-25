@@ -178,6 +178,7 @@ https://solved.ac/profile/neneg273
   
 ## programmers
 #### Level 1
+같은 숫자는 싫어 https://programmers.co.kr/learn/courses/30/lessons/12906  
 완주하지 못한 선수 Hash https://programmers.co.kr/learn/courses/30/lessons/42576  
 완전탐색 https://programmers.co.kr/learn/courses/30/lessons/42840  
 탐욕법_체육복 Hash https://programmers.co.kr/learn/courses/30/lessons/42862  
