@@ -14,6 +14,7 @@ https://solved.ac/profile/neneg273
 1094: 막대기 https://www.acmicpc.net/problem/1094  
 1107: 리모컨 BF https://www.acmicpc.net/problem/1107  
 1158: 요세푸스 문제 https://www.acmicpc.net/problem/1158  
+1167: 트리의 지름 BFS https://www.acmicpc.net/problem/1167  
 1181: 단어 정렬 String, Sort https://www.acmicpc.net/problem/1181  
 1182: 부분수열의 합 BT https://www.acmicpc.net/problem/1182  
 1197: 최소 스패닝 트리 MST https://www.acmicpc.net/problem/1197  
