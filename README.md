@@ -68,6 +68,7 @@ https://solved.ac/profile/neneg273
 2293: 동전 1 DP https://www.acmicpc.net/problem/2293  
 2294: 동전 2 DP https://www.acmicpc.net/problem/2294  
 2407: 조합 Math https://www.acmicpc.net/problem/2407  
+2448: 별 찍기 - 11 https://www.acmicpc.net/problem/2448  
 2467: 용액 BS https://www.acmicpc.net/problem/2467  
 2468: 안전 영역 BFS https://www.acmicpc.net/problem/2468  
 2473: 세 용액 https://www.acmicpc.net/problem/2473  

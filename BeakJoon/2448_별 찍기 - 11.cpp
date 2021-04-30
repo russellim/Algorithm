@@ -2,7 +2,7 @@
 // 2448: 별 찍기 - 11 https://www.acmicpc.net/problem/2448
 // 재귀.
 
-// failed. 출력 맞게 나오고 공백도 다 출력하는데 왜 틀릴까?
+// 별모양 잘못해서 틀린거였음 머쓱ㅎㅎ;.
 #include <iostream>
 #include <vector>
 #include <string>
@@ -37,7 +37,7 @@ namespace BOJ_2448
 		int h = 3, w = 5, emptyCount = 3;
 		vector<string> tri(h);
 		tri[0] = { "  *  " };
-		tri[1] = { " *** " };
+		tri[1] = { " * * " };
 		tri[2] = { "*****" };
 
 		for (int k = 0; n > 3 * pow(2, k); ++k)
@@ -45,7 +45,7 @@ namespace BOJ_2448
 			ExtendStar(tri, h, w, emptyCount);
 		}
 
-		for (int i = 0; i < h; ++i)
+		for (int i = 0; i < n; ++i)
 		{
 			cout << tri[i] << "\n";
 		}
