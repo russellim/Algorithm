@@ -1,8 +1,6 @@
 ﻿// 21.05.01. 토
 // 17387: 선분 교차 2 https://www.acmicpc.net/problem/17387
 // math(vector).
-
-// 34% failed.
 #include <iostream>
 #include <algorithm>
 using namespace std;
@@ -20,12 +18,12 @@ namespace BOJ_17387
 	};
 	struct Line { Dot d1, d2; };
 
-	LL CounterClockwise(Dot& a, Dot& b, Dot& c)
+	int CounterClockwise(Dot& a, Dot& b, Dot& c)
 	{
-		// 1. 점 2개 -> 벡터 공식: v = (d2.x - d1.x, d2.y - d1.y)
+		// 1. 점 2개 -> 벡터 공식: v(d1->d2) = (d2.x - d1.x, d2.y - d1.y)
 
-		// 2. 외적 공식 -> v1.x * v2.y - v1.y * v2.x
-		//				=> v(a-b).x * v(a-c).y - v(a-b).y * v(a-c).x
+		// 2. 외적 공식(z=0) -> v1.x * v2.y - v1.y * v2.x
+		//					 => v(a-b).x * v(a-c).y - v(a-b).y * v(a-c).x
 
 		// 3. 두 점의 외적: +(반시계방향), 0(평행), -(시계방향).
 
@@ -38,14 +36,16 @@ namespace BOJ_17387
 
 	bool cmpDot(Dot& left, Dot& right)
 	{
-		if (left.x == right.x) return left.y <= right.y;
-		else return left.x <= right.x;
+		if (left.x == right.x) return left.y < right.y;
+		else return left.x < right.x;
 	}
 
 	bool IsCross(Line& L1, Line& L2)
 	{
-		LL ccw1 = CounterClockwise(L1.d1, L1.d2, L2.d1) * CounterClockwise(L1.d1, L1.d2, L2.d2);
-		LL ccw2 = CounterClockwise(L2.d1, L2.d2, L1.d1) * CounterClockwise(L2.d1, L2.d2, L1.d2);
+		if (L1.d1 == L2.d1 || L1.d1 == L2.d2 || L1.d2 == L2.d1 || L1.d2 == L2.d2) return true;
+
+		int ccw1 = CounterClockwise(L1.d1, L1.d2, L2.d1) * CounterClockwise(L1.d1, L1.d2, L2.d2);
+		int ccw2 = CounterClockwise(L2.d1, L2.d2, L1.d1) * CounterClockwise(L2.d1, L2.d2, L1.d2);
 
 		if (ccw1 == 0 && ccw2 == 0) // 일직선 상에 있는 L1, L2.
 		{
