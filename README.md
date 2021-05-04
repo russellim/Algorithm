@@ -238,4 +238,5 @@ kakao 2019인턴_불량 사용자 BT https://programmers.co.kr/learn/courses/30/
 kakao 2020_자물쇠와 열쇠 https://programmers.co.kr/learn/courses/30/lessons/60059  
 kakao 2020_기둥과 보 설치 https://programmers.co.kr/learn/courses/30/lessons/60061  
 kakao 2020인턴_보석 쇼핑 https://programmers.co.kr/learn/courses/30/lessons/67258  
+kakao 2020인턴_경주로 건설 BFS https://programmers.co.kr/learn/courses/30/lessons/67259  
 kakao 2021_합승 택시 요금 Dijkstra https://programmers.co.kr/learn/courses/30/lessons/72413  
