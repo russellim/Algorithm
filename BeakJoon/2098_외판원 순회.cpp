@@ -1,6 +1,9 @@
 ﻿// 21.05.10. 월
 // 2098: 외판원 순회 https://www.acmicpc.net/problem/2098
 // DP, 비트마스킹.
+
+// 방문처리를 2진법으로 표현.
+// n == 4, 0101 => 0번, 2번을 방문함. 1000 => 4번 방문함.
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -11,36 +14,45 @@ namespace BOJ_2098
 	constexpr int MAX = 2e9;
 	vector<vector<int> > cost;
 	vector<vector<int> > dp;
-	int n;
+	int n, start;
 
-	int tsp(int current, int visited)
+	//Traveling Salesman problem.
+	int tsp(int now, int visited)
 	{
-		if (visited == (1 << n) - 1)
+		if (visited == (1 << n) - 1) // 모두 방문했음.
 		{
-			if (cost[current][0] == 0) return MAX; // 자기 위치.
-			return cost[current][0];
+			if (cost[now][start] == 0) return MAX;
+			return cost[now][start];
 		}
 
-		if (dp[current][visited] != 0) return dp[current][visited];
+		if (dp[now][visited] != 0) return dp[now][visited];
+		dp[now][visited] = MAX;
 
-		dp[current][visited] = MAX;
 		for (int i = 0; i < n; ++i)
 		{
-			int next = 1 << i;
-			if (cost[current][i] == 0) continue;
-			if ((visited & next) > 0) continue;
+			if (cost[now][i] == 0) continue;	// 자기 위치는 안감. ex) 1 -> 1.
 
-			dp[current][visited] = min(dp[current][visited], tsp(i, visited | next) + cost[current][i]);
+			int next = 1 << i;
+			// 0001 & 1000 = 0000 // 0001 & 0001 = 0001 > 0.
+			if ((visited & next) > 0) continue;	// 중복이 있으면 0보다 커집니다. 제외.
+
+			// 0001 | 1000 = 1001 == 0번, 3번 방문처리 완료.
+			dp[now][visited] = min(dp[now][visited], tsp(i, visited | next) + cost[now][i]);
 		}
 
-		return dp[current][visited];
+		//cout << now << " " << visited << " " << dp[now][visited];
+		return dp[now][visited];
 	}
 
 	void Solution()
 	{
 		cin >> n;
-		dp.assign(n, vector<int>(1 << 16));
+		// 1 << 4  == 10000(2) == 16.
+		// 1 << 16 == 10000000000000000(2) == 65536.
+		dp.assign(n, vector<int>(1 << n, 0)); // n=4, dp[4][16].
 		cost.assign(n, vector<int>(n));
+		start = 0;
+
 		for (int i = 0; i < n; ++i)
 		{
 			for (int j = 0; j < n; ++j)
@@ -49,7 +61,8 @@ namespace BOJ_2098
 			}
 		}
 
-		cout << tsp(0, 1);
+		// output.
+		cout << tsp(start, 1); // 1 == 0001 (0번방문)
 	}
 }
 
