@@ -141,6 +141,7 @@ https://solved.ac/profile/neneg273
 11659: 구간 합 구하기 4 부분합 https://www.acmicpc.net/problem/11659  
 11660: 구간 합 구하기 5 부분합 https://www.acmicpc.net/problem/11660  
 11722: 가장 긴 감소하는 부분 수열 DP https://www.acmicpc.net/problem/11722  
+11723: 집합 BitMask https://www.acmicpc.net/problem/11723  
 11724: 연결 요소의 개수 BFS https://www.acmicpc.net/problem/11724  
 11725: 트리의 부모 찾기 DFS https://www.acmicpc.net/problem/11725  
 11728: 배열 합치기 MergeSort https://www.acmicpc.net/problem/11728  
