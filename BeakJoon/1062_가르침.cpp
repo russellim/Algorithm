@@ -1,6 +1,6 @@
 ﻿// 21.05.13. 목
 // 1062: 가르침 https://www.acmicpc.net/problem/1062
-// 백트래킹.
+// 백트래킹, 비트마스킹(방문처리에).
 #include <iostream>
 #include <string>
 #include <vector>
@@ -11,19 +11,25 @@ using namespace std;
 namespace BOJ_1062
 {
 	int n, k, answer = 0;
-	vector<bool> visit;
+	int visit = 1 << 27;
 	vector<string> str;
+
+	int CharToInt(char c)
+	{
+		return c - 'a';
+	}
 
 	bool CheckWord(string& word)
 	{
 		for(int i=0; i< word.size(); ++i)
 		{
-				if (!visit[word[i] - 'a']) return false;
+			int cint = CharToInt(word[i]);
+				if ((visit & 1 << cint) != 1<< cint) return false;
 		}
 		return true;
 	}
 
-	void CountWord(int alpha, int count)
+	void LearnWord(int alpha, int count)
 	{
 		if (count == k)
 		{
@@ -38,15 +44,14 @@ namespace BOJ_1062
 
 		for (int i = alpha; i < 26; ++i)
 		{
-			if (!visit[i])
+			if ((visit & 1<<i) != 1<<i) // 해당 알파벳을 아직 안배웠으면.
 			{
-				visit[i] = true;
+				visit = visit | 1 << i;
 				CountWord(i, count + 1);
-				visit[i] = false;
+				visit = visit & ~(1 << i);
 			}
 		}
 	}
-
 
 	void Solution()
 	{
@@ -70,10 +75,10 @@ namespace BOJ_1062
 			str[i] = str[i].substr(4, str[i].size() - 8);
 		}
 
-		visit.assign(26, false);
-		visit['a' - 'a'] = visit['n' - 'a'] = visit['t' - 'a'] = visit['i' - 'a'] = visit['c' - 'a'] = true;
-		
-		CountWord(0, 0);
+		visit = visit | 1 << CharToInt('a') | 1 << CharToInt('n') | 1 << CharToInt('t')
+			| 1 << CharToInt('i') | 1 << CharToInt('c');
+
+		LearnWord(0, 0);
 		cout << answer;
 	}
 }

@@ -10,6 +10,7 @@ https://solved.ac/profile/neneg273
 1018: 체스판 다시 칠하기 BF https://www.acmicpc.net/problem/1018  
 1021: 회전하는 큐 https://www.acmicpc.net/problem/1021  
 1043: 거짓말 https://www.acmicpc.net/problem/1043  
+1062: 가르침 BT, BitMask https://www.acmicpc.net/problem/1062  
 1074: Z 분할정복 https://www.acmicpc.net/problem/1074  
 1094: 막대기 https://www.acmicpc.net/problem/1094  
 1107: 리모컨 BF https://www.acmicpc.net/problem/1107  
