@@ -31,6 +31,7 @@ https://solved.ac/profile/neneg273
 1541: 잃어버린 괄호 https://www.acmicpc.net/problem/1541  
 1620: 나는야 포켓몬 마스터 이다솜 BS https://www.acmicpc.net/problem/1620  
 1629: 곱셈 https://www.acmicpc.net/problem/1629  
+1647: 도시 분할 계획 MST https://www.acmicpc.net/problem/1647  
 1654: 랜선 자르기 BS https://www.acmicpc.net/problem/1654  
 1676: 팩토리얼 0의 개수 https://www.acmicpc.net/problem/1676  
 1697: 숨바꼭질 BFS https://www.acmicpc.net/problem/1697  
