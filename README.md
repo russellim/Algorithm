@@ -66,6 +66,7 @@ https://solved.ac/profile/neneg273
 2206: 벽 부수고 이동하기 BFS https://www.acmicpc.net/problem/2206  
 2217: 로프 https://www.acmicpc.net/problem/2217  
 2231: 분해합 BF https://www.acmicpc.net/problem/2231  
+2239: 스도쿠 BT https://www.acmicpc.net/problem/2239  
 2252: 줄 세우기 TopologicalSort https://www.acmicpc.net/problem/2252  
 2263: 트리의 순회 Tree https://programmers.co.kr/learn/courses/30/lessons/2263  
 2293: 동전 1 DP https://www.acmicpc.net/problem/2293  
