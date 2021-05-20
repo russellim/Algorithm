@@ -4,6 +4,7 @@ https://solved.ac/profile/neneg273
 
 ## BOJ
 1002: 터렛 Math https://www.acmicpc.net/problem/1002  
+1005: ACM Craft 위상정렬 https://www.acmicpc.net/problem/1005  
 1010: 다리 놓기 Math https://www.acmicpc.net/problem/1010  
 1011: Fly me to the Alpha Centauri Math https://www.acmicpc.net/problem/1011  
 1012: 유기농 배추 BFS https://www.acmicpc.net/problem/1012  
