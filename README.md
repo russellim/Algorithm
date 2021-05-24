@@ -46,6 +46,7 @@ https://solved.ac/profile/neneg273
 1865: 웜홀 벨만포드 https://www.acmicpc.net/problem/1865  
 1874: 스택 수열 Stack https://www.acmicpc.net/problem/1874  
 1912: 연속합 DP https://www.acmicpc.net/problem/1912  
+1915: 가장 큰 정사각형 DP https://www.acmicpc.net/problem/1915  
 1916: 최소비용 구하기 Dijkstra https://www.acmicpc.net/problem/1916  
 1918: 후위 표기식 Stack https://www.acmicpc.net/problem/1918  
 1920: 수 찾기 BinarySearch https://www.acmicpc.net/problem/1920  
