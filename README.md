@@ -102,6 +102,7 @@ https://solved.ac/profile/neneg273
 5430: AC Deque https://www.acmicpc.net/problem/5430  
 5525: IOIOI KMP https://www.acmicpc.net/problem/5525  
 5532: 방학 숙제 https://www.acmicpc.net/problem/5532  
+5557: 1학년 DP https://www.acmicpc.net/problem/5557  
 5639: 이진 검색 트리 Tree https://www.acmicpc.net/problem/5639  
 6064: 카잉 달력 Math https://www.acmicpc.net/problem/6064  
 6603: 로또 BT https://www.acmicpc.net/problem/6603  
