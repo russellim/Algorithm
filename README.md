@@ -98,6 +98,7 @@ https://solved.ac/profile/neneg273
 2960: 에라토스테네스의 체 https://www.acmicpc.net/problem/2960  
 3190: 뱀 https://www.acmicpc.net/problem/3190  
 4386: 별자리 만들기 MST https://www.acmicpc.net/problem/4386  
+4811: 알약 DP https://www.acmicpc.net/problem/4811  
 4948: 베르트랑 공준 https://www.acmicpc.net/problem/4948  
 4963: 섬의 개수 BFS https://www.acmicpc.net/problem/4963  
 5430: AC Deque https://www.acmicpc.net/problem/5430  
