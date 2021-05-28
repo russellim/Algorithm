@@ -53,6 +53,7 @@ https://solved.ac/profile/neneg273
 1927: 최소 힙 https://www.acmicpc.net/problem/1927  
 1931: 회의실배정 Sort https://www.acmicpc.net/problem/1931  
 1932: 정수 삼각형 DP https://www.acmicpc.net/problem/1932  
+1937: 욕심쟁이 판다 DP, DFS https://www.acmicpc.net/problem/1937  
 1966: 프린터 큐 Queue https://www.acmicpc.net/problem/1966  
 1967: 트리의 지름 DFS https://www.acmicpc.net/problem/1967  
 1987: 알파벳 DFS https://www.acmicpc.net/problem/1987  
