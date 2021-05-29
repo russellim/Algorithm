@@ -145,6 +145,7 @@ https://solved.ac/profile/neneg273
 11054: 가장 긴 바이토닉 부분 수열 DP https://www.acmicpc.net/problem/11054  
 11055: 가장 큰 증가 부분 수열 DP https://www.acmicpc.net/problem/11055  
 11057: 오르막 수 DP https://www.acmicpc.net/problem/11057  
+11066: 파일 합치기 DP https://www.acmicpc.net/problem/11066  
 11286: 절댓값 힙 Heap https://www.acmicpc.net/problem/11286  
 11403: 경로 찾기 BFS https://www.acmicpc.net/problem/11403  
 11404: 플로이드 https://www.acmicpc.net/problem/11404  
