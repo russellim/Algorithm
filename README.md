@@ -196,6 +196,7 @@ https://solved.ac/profile/neneg273
 17387: 선분 교차 2 Math https://www.acmicpc.net/problem/17387  
 17626: Four Squares DP https://www.acmicpc.net/problem/17626  
 18111: 마인크래프트 BF https://www.acmicpc.net/problem/18111  
+18222: 투에-모스 문자열  https://www.acmicpc.net/problem/18222  
 18870: 좌표 압축 Sort https://www.acmicpc.net/problem/18870  
   
   
