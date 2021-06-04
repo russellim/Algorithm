@@ -172,6 +172,7 @@ https://solved.ac/profile/neneg273
 13460: 구슬 탈출 2 BFS https://www.acmicpc.net/problem/13460  
 13549: 숨바꼭질 3 BFS https://www.acmicpc.net/problem/13549  
 14002: 가장 긴 증가하는 부분 수열 4 DP https://www.acmicpc.net/problem/14002  
+14426: 이모티콘 DP https://www.acmicpc.net/problem/14426  
 14499: 주사위 굴리기 https://www.acmicpc.net/problem/14499  
 14500: 테트로미노 https://www.acmicpc.net/problem/14500  
 14501: 퇴사 DP https://www.acmicpc.net/problem/14501  
