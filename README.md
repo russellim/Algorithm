@@ -61,6 +61,7 @@ https://solved.ac/profile/neneg273
 1991: 트리 순회 Tree https://www.acmicpc.net/problem/1991  
 1992: 쿼드트리 분할정복 https://www.acmicpc.net/problem/1992  
 2003: 수들의 합 2 부분합 https://www.acmicpc.net/problem/2003  
+2056: 작업 위상정렬 https://www.acmicpc.net/problem/2056  
 2096: 내려가기 DP https://www.acmicpc.net/problem/2096  
 2098: 외판원 순회 BitMask https://www.acmicpc.net/problem/2098  
 2108: 통계학 https://www.acmicpc.net/problem/2108  
