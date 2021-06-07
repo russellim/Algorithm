@@ -170,6 +170,7 @@ https://solved.ac/profile/neneg273
 12852: 1로 만들기 2 BT,DP https://www.acmicpc.net/problem/12852  
 12865: 평범한 배낭 DP https://www.acmicpc.net/problem/12865  
 13172: Σ Math https://www.acmicpc.net/problem/13172  
+13398: 연속합 2 DP https://www.acmicpc.net/problem/13398  
 13458: 시험 감독 Math https://www.acmicpc.net/problem/13458  
 13460: 구슬 탈출 2 BFS https://www.acmicpc.net/problem/13460  
 13549: 숨바꼭질 3 BFS https://www.acmicpc.net/problem/13549  
