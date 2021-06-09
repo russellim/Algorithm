@@ -200,6 +200,7 @@ https://solved.ac/profile/neneg273
 17070: 파이프 옮기기 1 BFS https://www.acmicpc.net/problem/17070  
 17144: 미세먼지 안녕! https://www.acmicpc.net/problem/17144  
 17387: 선분 교차 2 Math https://www.acmicpc.net/problem/17387  
+17404: RGB거리 2 DP https://www.acmicpc.net/problem/17404  
 17626: Four Squares DP https://www.acmicpc.net/problem/17626  
 18111: 마인크래프트 BF https://www.acmicpc.net/problem/18111  
 18222: 투에-모스 문자열  https://www.acmicpc.net/problem/18222  
