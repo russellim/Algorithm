@@ -67,6 +67,7 @@ https://solved.ac/profile/neneg273
 2108: 통계학 https://www.acmicpc.net/problem/2108  
 2156: 포도주 시식 DP https://www.acmicpc.net/problem/2156  
 2167: 2차원 배열의 합 https://www.acmicpc.net/problem/2167  
+2169: 로봇 조종하기 DP https://www.acmicpc.net/problem/2169  
 2178: 미로 탐색 BFS https://www.acmicpc.net/problem/2178  
 2206: 벽 부수고 이동하기 BFS https://www.acmicpc.net/problem/2206  
 2217: 로프 https://www.acmicpc.net/problem/2217  
