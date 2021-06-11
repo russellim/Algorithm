@@ -85,6 +85,7 @@ https://solved.ac/profile/neneg273
 2473: 세 용액 https://www.acmicpc.net/problem/2473  
 2485: 가로수 https://www.acmicpc.net/problem/2485  
 2490: 윷놀이 https://www.acmicpc.net/problem/2490  
+2533: 사회망 서비스(SNS) DFS, DP https://www.acmicpc.net/problem/2533  
 2579: 계단 오르기 DP https://www.acmicpc.net/problem/2579  
 2580: 스도쿠 https://www.acmicpc.net/problem/2580  
 2583: 영역 구하기 BFS https://www.acmicpc.net/problem/2583  
