@@ -171,6 +171,7 @@ https://solved.ac/profile/neneg273
 11779: 최소비용 구하기 2 Dijkstra https://www.acmicpc.net/problem/11779  
 11866: 요세푸스 문제 0 https://www.acmicpc.net/problem/11866  
 11931: 수 정렬하기 4 Sort https://www.acmicpc.net/problem/11931  
+12015: 가장 긴 증가하는 부분 수열 2 BS https://www.acmicpc.net/problem/12015  
 12100: 2048 (Easy) BT https://www.acmicpc.net/problem/12100  
 12851: 숨바꼭질 2 BFS https://www.acmicpc.net/problem/12851  
 12852: 1로 만들기 2 BT,DP https://www.acmicpc.net/problem/12852  
