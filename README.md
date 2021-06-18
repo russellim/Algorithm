@@ -1,6 +1,7 @@
 # Algorithm
 Study algorithm 2020.08.23 ~  
-https://solved.ac/profile/neneg273  
+[![Solved.ac
+프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=neneg273)](https://solved.ac/neneg273)
 
 ## BOJ
 1002: 터렛 Math https://www.acmicpc.net/problem/1002  
