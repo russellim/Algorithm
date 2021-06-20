@@ -1,8 +1,7 @@
 ﻿// 21.06.19. 토
 // 1922: 네트워크 연결 https://www.acmicpc.net/problem/1922
-// MST.
+// MST(프림).
 
-// failed.
 #include <iostream>
 #include <vector>
 #include <queue>
@@ -10,28 +9,10 @@
 
 using namespace std;
 
-namespace BOJ_14226
+namespace BOJ_1922
 {
 	struct Conn { int from, cost; };
 	vector<vector<Conn> > conn;
-	vector<int> parent;
-
-	int FindParent(int child)
-	{
-		if (child = parent[child]) return child;
-		return parent[child] = FindParent(parent[child]);
-	}
-
-	bool IsCycle(int from, int to)
-	{
-		from = FindParent(from);
-		to = FindParent(to);
-
-		if (from == to) return true;
-
-		parent[from] = to;
-		return false;
-	}
 
 	void Solution()
 	{
@@ -45,16 +26,15 @@ namespace BOJ_14226
 			conn[a].push_back({ b, cost });
 			conn[b].push_back({ a, cost });
 		}
-		parent.assign(n + 1, 0);
-		for (int i = 1; i <= n; ++i)
-		{
-			parent[i] = i;
-		}
 
 		int answer = 0;
 		vector<bool> visit(n + 1, false);
-		priority_queue<pair<int, int> > q;
-		q.push({ 0, 1 });
+		priority_queue<pair<int, int>, vector<pair<int, int> >, greater<pair<int, int> > > q;
+
+		for (auto& x : conn[1])
+		{
+			q.push({ x.cost, x.from });
+		}
 		visit[1] = true;
 
 		while (!q.empty())
@@ -63,15 +43,13 @@ namespace BOJ_14226
 			int nowPos = q.top().second;
 			q.pop();
 
+			if (visit[nowPos]) continue;
+			visit[nowPos] = true;
+			answer += nowCost;
+
 			for (auto& next : conn[nowPos])
 			{
-				int nextPos = next.from;
-				if (visit[nextPos]) continue;
-				if (IsCycle(nowCost, nextPos)) continue;
-				int nextCost = next.cost;
-				visit[nextPos] = true;
-				answer += nextCost;
-				q.push({ nextCost, nextPos });
+				q.push({ next.cost, next.from });
 			}
 		}
 
@@ -81,7 +59,7 @@ namespace BOJ_14226
 
 int main()
 {
-	BOJ_14226::Solution();
-										
+	BOJ_1922::Solution();
+
 	return 0;
 }

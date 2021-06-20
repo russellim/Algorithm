@@ -54,6 +54,7 @@ Study algorithm 2020.08.23 ~
 1916: 최소비용 구하기 Dijkstra https://www.acmicpc.net/problem/1916  
 1918: 후위 표기식 Stack https://www.acmicpc.net/problem/1918  
 1920: 수 찾기 BinarySearch https://www.acmicpc.net/problem/1920  
+1922: 네트워크 연결 MST https://www.acmicpc.net/problem/1922  
 1927: 최소 힙 https://www.acmicpc.net/problem/1927  
 1931: 회의실배정 Sort https://www.acmicpc.net/problem/1931  
 1932: 정수 삼각형 DP https://www.acmicpc.net/problem/1932  
