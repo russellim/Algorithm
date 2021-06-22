@@ -1,8 +1,6 @@
-﻿// 21.06.21. 일
+﻿// 21.06.21. 월
 // 2143: 두 배열의 합 https://www.acmicpc.net/problem/2143
-
-// failed 다시 볼것.
-// upper, lower bound 사용?
+// 부분합, 이분탐색(lower/upper_bound).
 
 #include <iostream>
 #include <vector>
@@ -12,13 +10,26 @@ using namespace std;
 
 namespace BOJ_2143
 {
-	void InputArr(vector<long long>& psum, int size)
+	typedef long long LL;
+
+	// 모든 부분합 조합들 만들기.
+	void MakePartialSumArr(vector<LL>& psum, int size)
 	{
-		int temp;
-		for (int i = 1; i <= size; ++i)
+		vector<LL> arr(size);
+		for (int i = 0; i < size; ++i)
 		{
-			cin >> temp;
-			psum[i] = temp + psum[i - 1];
+			cin >> arr[i];
+		}
+
+		for (int i = 0; i < size; ++i)
+		{
+			int sum = arr[i];
+			psum.push_back(sum);
+			for (int j = i + 1; j < size; ++j)
+			{
+				sum += arr[j];
+				psum.push_back(sum);
+			}
 		}
 	}
 
@@ -29,17 +40,19 @@ namespace BOJ_2143
 		int n, m;
 		cin >> T;
 		cin >> n;
-		vector<long long> apsum(n + 1, 0);
-		InputArr(apsum, n);
+		vector<long long> apsum;
+		MakePartialSumArr(apsum, n);
 		cin >> m;
-		vector<long long> bpsum(m + 1, 0);
-		InputArr(bpsum, m);
+		vector<long long> bpsum;
+		MakePartialSumArr(bpsum, m);
 
+		// solution.
 		sort(apsum.begin(), apsum.end());
 		sort(bpsum.begin(), bpsum.end());
 
-		for (int i = 1; i <= n; ++i)
+		for (int i = 0; i < apsum.size(); ++i) // apsum 기준으로.
 		{
+			// 이분탐색으로 둘이 합 5 초과 첫 인덱스 - 5 되는 첫 인덱스.
 			int low = lower_bound(bpsum.begin(), bpsum.end(), T - apsum[i]) - bpsum.begin();
 			int high = upper_bound(bpsum.begin(), bpsum.end(), T - apsum[i]) - bpsum.begin();
 

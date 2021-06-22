@@ -69,6 +69,7 @@ Study algorithm 2020.08.23 ~
 2096: 내려가기 DP https://www.acmicpc.net/problem/2096  
 2098: 외판원 순회 BitMask https://www.acmicpc.net/problem/2098  
 2108: 통계학 https://www.acmicpc.net/problem/2108  
+2143: 두 배열의 합 BS https://www.acmicpc.net/problem/2143  
 2156: 포도주 시식 DP https://www.acmicpc.net/problem/2156  
 2167: 2차원 배열의 합 https://www.acmicpc.net/problem/2167  
 2169: 로봇 조종하기 DP https://www.acmicpc.net/problem/2169  
