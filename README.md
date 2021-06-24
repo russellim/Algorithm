@@ -83,6 +83,7 @@ Study algorithm 2020.08.23 ~
 2263: 트리의 순회 Tree https://programmers.co.kr/learn/courses/30/lessons/2263  
 2293: 동전 1 DP https://www.acmicpc.net/problem/2293  
 2294: 동전 2 DP https://www.acmicpc.net/problem/2294  
+2342: Dance Dance Revolution DP, DFS https://www.acmicpc.net/problem/2342  
 2407: 조합 Math https://www.acmicpc.net/problem/2407  
 2448: 별 찍기 - 11 https://www.acmicpc.net/problem/2448  
 2467: 용액 BS https://www.acmicpc.net/problem/2467  

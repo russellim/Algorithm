@@ -1,8 +1,6 @@
 ﻿// 21.06.23. 수
 // 2342: Dance Dance Revolution https://www.acmicpc.net/problem/2342
 // DP, DFS.
-
-// failed. 시간초과.
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -14,8 +12,9 @@ namespace BOJ_2342
 {
 	constexpr int MAX = 100000;
 	constexpr int DIR = 5;
-	vector<int> cmd;
-	vector<vector<vector<int> > > dp(MAX, vector<vector<int> >(DIR, vector<int>(DIR, -1)));
+	vector<int> cmd(MAX + 1);
+	int cmdSize = 0;
+	vector<vector<vector<int> > > dp(MAX + 1, vector<vector<int> >(DIR, vector<int>(DIR, -1)));
 
 	int CheckScore(int from, int to)
 	{
@@ -27,7 +26,7 @@ namespace BOJ_2342
 
 	int dfs(int foot1, int foot2, int index)
 	{
-		if (index == cmd.size()) return 0;
+		if (index == cmdSize) return 0;
 
 		int& now = dp[index][foot1][foot2];
 		if (now != -1) return now;
@@ -43,8 +42,8 @@ namespace BOJ_2342
 		{
 			cin >> point;
 			if (point == 0) break;
-			cmd.reserve(cmd.size() + 1);
-			cmd.emplace_back(point);
+			//cmd.reserve(cmd.size() + 1); // 이거 시간 오래걸리니까 주의.
+			cmd[cmdSize++] = point;
 		}
 
 		cout << dfs(0, 0, 0);
