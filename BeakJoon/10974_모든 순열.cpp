@@ -3,9 +3,33 @@
 // 백트래킹.
 #include <iostream>
 #include <vector>
+#include <algorithm>
 using namespace std;
 
+// 210625 추가
+// STL <algorithm> next_permutation (다음 순서 순열) 사용.
 namespace BOJ_10974
+{
+	void Solution()
+	{
+		int n;
+		cin >> n;
+		vector<int> arr(n);
+		for (int i = 0; i < n; ++i)
+		{
+			arr[i] = i + 1;
+		}
+
+		do
+		{
+			for (int& x : arr) cout << x << " ";
+			cout << "\n";
+		} while (next_permutation(arr.begin(), arr.end()));
+	}
+}
+
+// 백트래킹 사용.
+namespace BOJ_10974_lagacy
 {
 	int n;
 	vector<int> arr;
