@@ -1,18 +1,16 @@
 ﻿// 21.06.26. 토
 // 1007: 벡터 매칭 https://www.acmicpc.net/problem/1007
 // math(벡터), next_permutation.
-
-// failed. 벡터공부 좀더 할것.
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <cmath>
 #include <climits>
 using namespace std;
 
 namespace BOJ_1007
 {
 	struct Coord { int x, y; };
-	double answer = LLONG_MAX;
 
 	double GetDistance(double tx, double ty)
 	{
@@ -21,6 +19,7 @@ namespace BOJ_1007
 
 	void Solution()
 	{
+		// 소수점 12자리 고정.
 		cout << fixed;
 		cout.precision(12);
 		
@@ -30,10 +29,14 @@ namespace BOJ_1007
 		while (t--)
 		{
 			int n;
+			double answer = LLONG_MAX;
 			cin >> n;
 			vector<Coord> arr(n);
 			vector<int> mul(n);
 
+			// 점A, 점B가 있을때 A->B 벡터.
+			// = B - A (+하나 -하나).
+			// 반은 +, 반은 - 해주고 조합별로 계산해줌.
 			for (int i = 0; i < n; ++i)
 			{
 				cin >> arr[i].x >> arr[i].y;
@@ -44,16 +47,14 @@ namespace BOJ_1007
 				else mul[i] = 1;
 			}
 
-			double tx = 0.0, ty = 0.0;
 			do
 			{
+				double tx = 0.0, ty = 0.0;
 				for (int i = 0; i < n; ++i)
 				{
-					cout << mul[i] << " ";
 					tx += (arr[i].x * mul[i]);
 					ty += (arr[i].y * mul[i]);
 				}
-				cout << tx << " " << ty << endl;
 				answer = min(answer, GetDistance(tx, ty));
 
 			} while (next_permutation(mul.begin(), mul.end()));
@@ -69,6 +70,5 @@ int main()
 	cin.tie(0); cout.tie(0);
 
 	BOJ_1007::Solution();
-
 	return 0;
 }
