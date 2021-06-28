@@ -22,6 +22,7 @@ Study algorithm 2020.08.23 ~
 1181: 단어 정렬 String, Sort https://www.acmicpc.net/problem/1181  
 1182: 부분수열의 합 BT https://www.acmicpc.net/problem/1182  
 1197: 최소 스패닝 트리 MST https://www.acmicpc.net/problem/1197  
+1202: 보석 도둑 STL::multiset https://www.acmicpc.net/problem/1202  
 1238: 파티 Dijkstra https://www.acmicpc.net/problem/1238  
 1256: 사전 DP https://www.acmicpc.net/problem/1256  
 1260: DFS와 BFS https://www.acmicpc.net/problem/1260  
