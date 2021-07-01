@@ -46,6 +46,7 @@ Study algorithm 2020.08.23 ~
 1717: 집합의 표현 https://www.acmicpc.net/problem/1717  
 1753: 최단경로 Dijkstra https://www.acmicpc.net/problem/1753  
 1764: 듣보잡 BS https://www.acmicpc.net/problem/1764  
+1766: 문제집 priority_queue vs set https://www.acmicpc.net/problem/1766  
 1780: 종이의 개수 분할정복 https://www.acmicpc.net/problem/1780  
 1786: 찾기 KMP https://www.acmicpc.net/problem/1786  
 1806: 부분합 https://www.acmicpc.net/problem/1806  
