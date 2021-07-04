@@ -44,6 +44,7 @@ Study algorithm 2020.08.23 ~
 1697: 숨바꼭질 BFS https://www.acmicpc.net/problem/1697  
 1699: 제곱수의 합 DP https://www.acmicpc.net/problem/1699  
 1717: 집합의 표현 https://www.acmicpc.net/problem/1717  
+1725: 히스토그램 https://www.acmicpc.net/problem/1725  
 1753: 최단경로 Dijkstra https://www.acmicpc.net/problem/1753  
 1764: 듣보잡 BS https://www.acmicpc.net/problem/1764  
 1766: 문제집 priority_queue vs set https://www.acmicpc.net/problem/1766  

@@ -1,7 +1,6 @@
 ﻿// 21.07.02. 금
 // 1725: 히스토그램 https://www.acmicpc.net/problem/1725
-
-// failed 푸는중.. 플레5!
+// stack.
 #include <iostream>
 #include <vector>
 #include <stack>
@@ -12,21 +11,23 @@ namespace BOJ_1725
 {
 	void Solution()
 	{
-		int n, answer  = 0;
+		int n, answer = 0;
 		cin >> n;
 		vector<int> arr(n + 2, 0);
 		for (int i = 1; i <= n; ++i) cin >> arr[i];
 
 		stack<int> st;
 
-		st.push(arr[0]);
-		for (int i = 1; i < n; ++i)
+		st.push(0);
+		for (int i = 1; i <= n + 1; ++i)
 		{
 			int len = arr[i];
 			while (!st.empty() && arr[st.top()] > arr[i])
 			{
+				int h = arr[st.top()];
 				st.pop();
-				answer = max(answer, arr[st.top()] * (i - st.top() - 1));
+				int w = i - st.top() - 1;
+				answer = max(answer, h * w);
 			}
 
 			st.push(i);
