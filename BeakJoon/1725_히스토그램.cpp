@@ -21,12 +21,13 @@ namespace BOJ_1725
 		st.push(0);
 		for (int i = 1; i <= n + 1; ++i)
 		{
-			int len = arr[i];
-			while (!st.empty() && arr[st.top()] > arr[i])
+			int nowH = arr[i];
+			while (!st.empty() && arr[st.top()] > nowH)
 			{
 				int h = arr[st.top()];
 				st.pop();
 				int w = i - st.top() - 1;
+				//cout << nowH << " " << h << " " << w << endl;
 				answer = max(answer, h * w);
 			}
 
