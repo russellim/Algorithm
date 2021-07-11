@@ -3,6 +3,7 @@ https://programmers.co.kr/learn/courses/30/lessons/72410
 21_07_09 create.
 21_07_09 update: 함수 이름만 우선 작성.
 21_07_10 update: 1, 2, 3 단계 작성.
+21_07_11 update: 4, 5, 6, 7 단계 작성.
 */
 
 function toLower(str)
@@ -63,9 +64,9 @@ function eraseContinuousDotFromString(str)
 function eraseFirstAndEndDotFromString(str)
 {
     // 4. str 처음과 끝에 있는 . 삭제.
-    if(str[0] === ".") str = removeAt(str, 0);
+    if(str[0] === ".") str = str.slice(1);
     if(str.length === 0) return str;
-    if(str[str.length-1]) str = removeAt(str, str.length-1)
+    if(str[str.length-1] === ".") str = str.slice(0, -1);
     return str;
 }
 
@@ -79,30 +80,35 @@ function fillaIntoEmptyString(str)
 function erase15MoreFromString(str)
 {
     // 6. 16자리 이상이면 16자리부터 자르기.
-    if(str.length <= 15) return str;
-    
+    if(str.length < 16) return str;
+    str = str.substr(0, 15);
+    if(str[str.length-1] === "."){
+        str = removeAt(str, 14);
+    }
+    return str;
 }
 
 function addCharFromString(str)
 {
     // 7. 2자리 이하면 끝자리 문자를 추가로 넣어 3자리로 만들기.
     if(str.length > 2) return str;
+    let ch = str[str.length-1];
+    do{
+        str = str+ch;
+    }while(str.length < 3);
+    return str;
 }
 
 
 function solution(new_id) {
 
     new_id = toLower(new_id);
-    console.log(new_id);
     new_id = eraseCharFromString(new_id);
-    console.log(new_id);
     new_id = eraseContinuousDotFromString(new_id);
-    console.log(new_id);
     new_id = eraseFirstAndEndDotFromString(new_id);
-    console.log(new_id);
-    fillaIntoEmptyString(new_id);
-    erase15MoreFromString(new_id);
-    addCharFromString(new_id);
+    new_id = fillaIntoEmptyString(new_id);
+    new_id = erase15MoreFromString(new_id);
+    new_id = addCharFromString(new_id);
     
     console.log(new_id);
     
