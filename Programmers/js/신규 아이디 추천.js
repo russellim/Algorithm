@@ -4,18 +4,13 @@ https://programmers.co.kr/learn/courses/30/lessons/72410
 21_07_09 update: 함수 이름만 우선 작성.
 21_07_10 update: 1, 2, 3 단계 작성.
 21_07_11 update: 4, 5, 6, 7 단계 작성.
+21_07_12 update: RemoveAt 제거 substring, substr로 변경.
 */
 
 function toLower(str)
 {
     // 1. 모든 대문자 -> 소문자.
     return str.toLowerCase();
-}
-
-function removeAt(str, start, end = -1)
-{
-    if(end === -1) end = start;
-    return str.slice(0, start) + str.slice(end+1);
 }
 
 function eraseCharFromString(str)
@@ -28,7 +23,7 @@ function eraseCharFromString(str)
         if(!check_eng.test(str[i]) && 
            !check_num.test(str[i]) && 
            !check_spc.test(str[i])) {
-            str = removeAt(str, i);
+            str = str.substring(0, i) + str.substr(i+1);
             --i;
         }
     }
@@ -49,13 +44,13 @@ function eraseContinuousDotFromString(str)
                 start = end = -1;
                 continue;
             }
-            str = removeAt(str, start, end-1);
+            str = str.substring(0, start) + str.substr(end);
             start = end = -1;
         }
     }
     
     if(end != -1){
-        str = removeAt(str, start, end-1);
+        str = str.substring(0, start) + str.substr(end);
     }
     
     return str;
@@ -64,26 +59,27 @@ function eraseContinuousDotFromString(str)
 function eraseFirstAndEndDotFromString(str)
 {
     // 4. str 처음과 끝에 있는 . 삭제.
-    if(str[0] === ".") str = str.slice(1);
+    if(str[0] === ".") str = str.substr(1);
     if(str.length === 0) return str;
-    if(str[str.length-1] === ".") str = str.slice(0, -1);
+    if(str[str.length-1] === ".") str = str.substring(0, str.length-1);
     return str;
 }
 
 function fillaIntoEmptyString(str)
 {
     // 5. str이 비었을 경우 a하나 넣어주기.
-    if(str === "") return "a";
+    if(str.length === 0) return "a";
     return str;
 }
 
 function erase15MoreFromString(str)
 {
-    // 6. 16자리 이상이면 16자리부터 자르기.
+    // 6. 16자리 이상이면 16자리부터 자르고 끝자리 .이면 자르기.
     if(str.length < 16) return str;
     str = str.substr(0, 15);
+    
     if(str[str.length-1] === "."){
-        str = removeAt(str, 14);
+        str = str.substr(0, 14);
     }
     return str;
 }
