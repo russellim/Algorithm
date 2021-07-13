@@ -5,6 +5,8 @@ https://programmers.co.kr/learn/courses/30/lessons/72410
 21_07_10 update: 1, 2, 3 단계 작성.
 21_07_11 update: 4, 5, 6, 7 단계 작성.
 21_07_12 update: RemoveAt 제거 substring, substr로 변경.
+21_07_13 update: 3단계 수정. substring사용.
+21_07_13 solved!
 */
 
 function toLower(str)
@@ -33,24 +35,11 @@ function eraseCharFromString(str)
 function eraseContinuousDotFromString(str)
 {
     // 3. str 순회하면서 연속된 . 하나로 만들기.
-    let start = -1, end = -1;
-    for(let i=0; i<str.length; ++i){
-        if(str[i] === "."){
-            if(start === -1) start = i;
-            else end = i;
+    for(let i=1; i<str.length; ++i){
+        if(str[i-1] === "." && str[i] === "."){
+            str = str.substring(0, i) + str.substring(i+1);
+            --i;
         }
-        else{
-            if(end == -1) {
-                start = end = -1;
-                continue;
-            }
-            str = str.substring(0, start) + str.substr(end);
-            start = end = -1;
-        }
-    }
-    
-    if(end != -1){
-        str = str.substring(0, start) + str.substr(end);
     }
     
     return str;
@@ -110,3 +99,10 @@ function solution(new_id) {
     
     return new_id;
 }
+
+solution("...!@BaT#*..y.abcdefghijklm");
+solution("z-+.^.");
+solution("=.=");
+solution("123_.def");
+solution("abcdefghijklmn.p");
+solution("..!..?..@..-..a..B..C........");
