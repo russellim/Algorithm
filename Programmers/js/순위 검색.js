@@ -1,9 +1,38 @@
 /*
 https://programmers.co.kr/learn/courses/30/lessons/72412
 21_07_18 create.
+21_07_19 update: 문자열 자르기 추가. str.split(' ') -> array 반환.
 */
+
+const LANGUAGE = 1;
+const JOB = 1;
+const CAREER = 1;
+const SOULFOOD = 1;
+const SCORE = 1;
 
 function solution(info, query) {
     var answer = [];
+    var infoDB = [];
+    var searchDB = [];
+
+    info.forEach(element => {
+        infoDB.push(element.split(' '));
+    });
+
+    query.forEach(element => {
+        searchDB.push(element.split(' and '));
+    });
+    for(let i=0; i<searchDB.length; ++i){
+        let temp = searchDB[i][3];
+        let splitTemp = temp.split(' ');
+        searchDB[i].pop();
+        splitTemp.forEach(value =>{
+            searchDB[i].push(value);
+        });
+    }
+
     return answer;
 }
+
+console.log(solution(["java backend junior pizza 150","python frontend senior chicken 210","python frontend senior chicken 150","cpp backend senior pizza 260","java backend junior chicken 80","python backend senior chicken 50"],
+["java and backend and junior and pizza 100","python and frontend and senior and chicken 200","cpp and - and senior and pizza 250","- and backend and senior and - 150","- and - and - and chicken 100","- and - and - and - 150"]));
