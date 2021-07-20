@@ -2,13 +2,8 @@
 https://programmers.co.kr/learn/courses/30/lessons/72412
 21_07_18 create.
 21_07_19 update: 문자열 자르기 추가. str.split(' ') -> array 반환.
+21_07_20 update: for
 */
-
-const LANGUAGE = 1;
-const JOB = 1;
-const CAREER = 1;
-const SOULFOOD = 1;
-const SCORE = 1;
 
 function solution(info, query) {
     var answer = [];
@@ -29,7 +24,16 @@ function solution(info, query) {
         splitTemp.forEach(value =>{
             searchDB[i].push(value);
         });
+        
     }
+    
+    let temp = [];
+    for(let i=0; i<info.length; ++i){
+        temp.push(1);
+    }
+    
+    console.log(infoDB);
+    console.log(searchDB);
 
     return answer;
 }
