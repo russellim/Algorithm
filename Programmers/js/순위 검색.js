@@ -2,8 +2,11 @@
 https://programmers.co.kr/learn/courses/30/lessons/72412
 21_07_18 create.
 21_07_19 update: 문자열 자르기 추가. str.split(' ') -> array 반환.
-21_07_20 update: for
+21_07_20 update: for추가
+21_07_21 update: for->foreach
 */
+
+const SCORE_INDEX = 4
 
 function solution(info, query) {
     var answer = [];
@@ -31,6 +34,24 @@ function solution(info, query) {
     for(let i=0; i<info.length; ++i){
         temp.push(1);
     }
+
+    searchDB.forEach(search_query => {
+        search_query.forEach(search_data_, indexNum => {
+            if(search_query === "-") continue;
+
+            infoDB.forEach(data => {
+                if(indexNum === SCORE_INDEX) {
+
+                }
+                else {
+                    if(data[indexNum] === data){
+
+                    }
+                }
+            })
+        });
+    });
+
     
     console.log(infoDB);
     console.log(searchDB);
