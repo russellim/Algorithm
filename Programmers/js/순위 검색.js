@@ -4,9 +4,10 @@ https://programmers.co.kr/learn/courses/30/lessons/72412
 21_07_19 update: 문자열 자르기 추가. str.split(' ') -> array 반환.
 21_07_20 update: for추가
 21_07_21 update: for->foreach
+21_07_23 update: 쿼리 검색 매치
 */
 
-const SCORE_INDEX = 4
+const SCORE_INDEX = 4;
 
 function solution(info, query) {
     var answer = [];
@@ -30,31 +31,34 @@ function solution(info, query) {
         
     }
     
-    let temp = [];
-    for(let i=0; i<info.length; ++i){
-        temp.push(1);
-    }
-
     searchDB.forEach(search_query => {
-        search_query.forEach(search_data_, indexNum => {
-            if(search_query === "-") continue;
-
-            infoDB.forEach(data => {
-                if(indexNum === SCORE_INDEX) {
-
+        let selectTemp = [];
+        for(let i=0; i<info.length; ++i){
+        selectTemp.push(1);
+        }
+        
+        search_query.forEach((search_data, search_index) => {
+            if(search_data == '-') return;
+            
+            infoDB.forEach((info_data, info_index) => {
+                if(selectTemp[info_index] === 0) return;
+                if(search_index === SCORE_INDEX){
+                    if(info_data < search_data)
+                         selectTemp[info_index] = 0;
                 }
                 else {
-                    if(data[indexNum] === data){
-
-                    }
+                    if(info_data[search_index] != search_data)
+                        selectTemp[info_index] = 0;
                 }
-            })
+            });
         });
+        
+        let count = selectTemp.filter(element => 1 === element).length;
+        answer.push(count);
     });
-
     
-    console.log(infoDB);
-    console.log(searchDB);
+    //console.log(infoDB);
+    //console.log(searchDB);
 
     return answer;
 }
