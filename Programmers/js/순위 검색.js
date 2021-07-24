@@ -5,6 +5,7 @@ https://programmers.co.kr/learn/courses/30/lessons/72412
 21_07_20 update: for추가
 21_07_21 update: for->foreach
 21_07_23 update: 쿼리 검색 매치
+21_07_24 update: Number() 사용, 제출했는데 시간 초과
 */
 
 const SCORE_INDEX = 4;
@@ -31,6 +32,7 @@ function solution(info, query) {
         
     }
     
+    
     searchDB.forEach(search_query => {
         let selectTemp = [];
         for(let i=0; i<info.length; ++i){
@@ -43,8 +45,8 @@ function solution(info, query) {
             infoDB.forEach((info_data, info_index) => {
                 if(selectTemp[info_index] === 0) return;
                 if(search_index === SCORE_INDEX){
-                    if(info_data < search_data)
-                         selectTemp[info_index] = 0;
+                    if(Number(info_data[search_index]) < Number(search_data))
+                         selectTemp[info_index] = 0;         
                 }
                 else {
                     if(info_data[search_index] != search_data)
@@ -57,9 +59,6 @@ function solution(info, query) {
         answer.push(count);
     });
     
-    //console.log(infoDB);
-    //console.log(searchDB);
-
     return answer;
 }
 
