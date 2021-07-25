@@ -6,11 +6,55 @@ https://programmers.co.kr/learn/courses/30/lessons/72412
 21_07_21 update: for->foreach
 21_07_23 update: 쿼리 검색 매치
 21_07_24 update: Number() 사용, 제출했는데 시간 초과
+21_07_25 update: Map 써서 새로운 방법으로 해보자
 */
 
-const SCORE_INDEX = 4;
+var infoMap = new Map();
+var infoTempArr = new Array();
 
-function solution(info, query) {
+function makeInfoString(infoArr, totalBarCount, useBarCount, index){
+    if(infoTempArr.length == 4){
+        let infoStr = "";
+        infoTempArr.forEach(value => {
+            
+            infoStr += value;
+        });
+        //console.log(infoTempArr);
+        infoMap.set(infoStr, infoArr[4]);
+        return;
+    }
+
+    for(let i=index; i<4; ++i){
+        if(useBarCount < totalBarCount)
+            infoTempArr.push("-");
+        else 
+            infoTempArr.push(infoArr[i]);
+
+        makeInfoString(totalBarCount, useBarCount+1, i+1);
+
+        infoTempArr[infoTempArr.length-1] = infoArr[i];
+    }
+}
+
+function solution(info, query){
+    var answer = [];
+    var infoArr = [];
+    info.forEach(value =>{
+        infoArr.push(value.split(' '));
+    });
+    
+    infoArr.forEach(oneInfoArr =>{
+        for(let barCount=1; barCount<=4; ++barCount){
+            makeInfoString(oneInfoArr, barCount, 0, 0);
+        }
+    });
+
+
+    return answer;
+}
+
+const SCORE_INDEX = 4;
+function solution_legacy(info, query) {
     var answer = [];
     var infoDB = [];
     var searchDB = [];
