@@ -7,48 +7,66 @@ https://programmers.co.kr/learn/courses/30/lessons/72412
 21_07_23 update: 쿼리 검색 매치
 21_07_24 update: Number() 사용, 제출했는데 시간 초과
 21_07_25 update: Map 써서 새로운 방법으로 해보자
+21_07_26 update: - 넣는 재귀함수 추가
 */
 
 var infoMap = new Map();
-var infoTempArr = new Array();
+var infoTempArr;
 
-function makeInfoString(infoArr, totalBarCount, useBarCount, index){
-    if(infoTempArr.length == 4){
-        let infoStr = "";
-        infoTempArr.forEach(value => {
-            
-            infoStr += value;
-        });
-        //console.log(infoTempArr);
-        infoMap.set(infoStr, infoArr[4]);
+function arrayToString(arr)
+{
+    let str = "";
+    arr.forEach(value =>{
+        str += value;
+    });
+    return str;
+}
+
+function makeInfoString(oneInfoArr, totalBarCount, useBarCount, index){
+    if(totalBarCount == useBarCount){
+        let infoStr = arrayToString(infoTempArr);
+        infoMap[infoStr] = oneInfoArr[4];
         return;
     }
 
     for(let i=index; i<4; ++i){
-        if(useBarCount < totalBarCount)
-            infoTempArr.push("-");
-        else 
-            infoTempArr.push(infoArr[i]);
-
-        makeInfoString(totalBarCount, useBarCount+1, i+1);
-
-        infoTempArr[infoTempArr.length-1] = infoArr[i];
-    }
+        // *** 미리 안되는 거 빼놓기
+        infoTempArr[i] = "-";
+        //console.log(infoTempArr);
+        makeInfoString(oneInfoArr, totalBarCount, useBarCount+1, i+1);
+        infoTempArr[i] = oneInfoArr[i];
+    }   
 }
 
 function solution(info, query){
     var answer = [];
     var infoArr = [];
+    var searchArr = [];
     info.forEach(value =>{
         infoArr.push(value.split(' '));
     });
     
     infoArr.forEach(oneInfoArr =>{
+        infoTempArr = oneInfoArr.slice();
         for(let barCount=1; barCount<=4; ++barCount){
             makeInfoString(oneInfoArr, barCount, 0, 0);
         }
     });
-
+    
+    query.forEach(value =>{
+         searchArr.push(value.split(' and '));
+    });
+    for(let i=0; i<searchArr.length; ++i){
+        let temp = searchArr[i][3];
+        let splitTemp = temp.split(' ');
+        searchArr[i].pop();
+        splitTemp.forEach(value =>{
+            searchArr[i].push(value);
+        });
+        
+        let searchStr = arrayToString(searchArr[i]);
+        // *** score는 따로 빼놓기
+    }
 
     return answer;
 }
