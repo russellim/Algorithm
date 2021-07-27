@@ -1,13 +1,10 @@
 /*
 https://programmers.co.kr/learn/courses/30/lessons/72412
 21_07_18 create.
-21_07_19 update: 문자열 자르기 추가. str.split(' ') -> array 반환.
-21_07_20 update: for추가
-21_07_21 update: for->foreach
-21_07_23 update: 쿼리 검색 매치
-21_07_24 update: Number() 사용, 제출했는데 시간 초과
+21_07_19 ~ 21_07_24 update: 문자열 자르기 추가. str.split(' ') -> array 반환, foreach, 쿼리 검색 매치,  Number() 사용, 제출했는데 시간 초과
 21_07_25 update: Map 써서 새로운 방법으로 해보자
 21_07_26 update: - 넣는 재귀함수 추가
+21_07_27 update: 점수 추가 Map 대신 2차원 배열을 써야할 것 같음
 */
 
 var infoMap = new Map();
@@ -65,7 +62,7 @@ function solution(info, query){
         });
         
         let searchStr = arrayToString(searchArr[i]);
-        // *** score는 따로 빼놓기
+        
     }
 
     return answer;
