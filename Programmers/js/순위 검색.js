@@ -7,7 +7,7 @@ https://programmers.co.kr/learn/courses/30/lessons/72412
 21_07_27 update: 점수 추가 Map 대신 2차원 배열을 써야할 것 같음
 */
 
-var infoMap = new Map();
+var infoMap = [];
 var infoTempArr;
 
 function arrayToString(arr)
