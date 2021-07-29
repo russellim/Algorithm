@@ -13,16 +13,16 @@ var infoTempArr;
 function arrayToString(arr)
 {
     let str = "";
-    arr.forEach(value =>{
-        str += value;
-    });
+    for(let i=0; i<=3; ++i){
+        str += arr[i];
+    }
     return str;
 }
 
 function makeInfoString(oneInfoArr, totalBarCount, useBarCount, index){
     if(totalBarCount == useBarCount){
         let infoStr = arrayToString(infoTempArr);
-        infoMap[infoStr] = oneInfoArr[4];
+        infoMap.push([oneInfoArr[4], infoStr]);
         return;
     }
 
@@ -49,20 +49,29 @@ function solution(info, query){
             makeInfoString(oneInfoArr, barCount, 0, 0);
         }
     });
+
+    infoMap.sort((a, b) => b[0] - a[0]);
+    console.log(infoMap);
     
+    let count = 0;
     query.forEach(value =>{
          searchArr.push(value.split(' and '));
     });
+    count = 0;
     for(let i=0; i<searchArr.length; ++i){
         let temp = searchArr[i][3];
         let splitTemp = temp.split(' ');
         searchArr[i].pop();
-        splitTemp.forEach(value =>{
-            searchArr[i].push(value);
-        });
+        searchArr[i].push(splitTemp[0]);
         
         let searchStr = arrayToString(searchArr[i]);
-        
+        let searchScore = splitTemp[1];
+
+        for(let infoIndex = 0; infoIndex<infoIndex.length; ++infoIndex){
+            if(infoMap[infoIndex][0] < searchScore) break;
+            if(infoMap[infoIndex][0] == searchStr) ++count;
+        }
+        answer.push(count);
     }
 
     return answer;
