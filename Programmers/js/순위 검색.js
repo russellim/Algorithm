@@ -45,13 +45,12 @@ function solution(info, query){
     
     infoArr.forEach(oneInfoArr =>{
         infoTempArr = oneInfoArr.slice();
-        for(let barCount=1; barCount<=4; ++barCount){
+        for(let barCount=0; barCount<=4; ++barCount){
             makeInfoString(oneInfoArr, barCount, 0, 0);
         }
     });
 
     infoMap.sort((a, b) => b[0] - a[0]);
-    console.log(infoMap);
     
     let count = 0;
     query.forEach(value =>{
@@ -66,10 +65,11 @@ function solution(info, query){
         
         let searchStr = arrayToString(searchArr[i]);
         let searchScore = splitTemp[1];
-
-        for(let infoIndex = 0; infoIndex<infoIndex.length; ++infoIndex){
+        
+        for(let infoIndex = 0; infoIndex<infoMap.length; ++infoIndex){
             if(infoMap[infoIndex][0] < searchScore) break;
-            if(infoMap[infoIndex][0] == searchStr) ++count;
+            console.log(infoMap[infoIndex][1] + " " + searchStr);
+            if(infoMap[infoIndex][1] == searchStr) ++count;
         }
         answer.push(count);
     }
