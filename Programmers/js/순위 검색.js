@@ -1,9 +1,11 @@
 /*
 https://programmers.co.kr/learn/courses/30/lessons/72412
+참고: https://programmers.co.kr/questions/15601
 21_07_18 create.
 21_07_19 ~ 21_07_24 update: 문자열 자르기 추가. str.split(' ') -> array 반환, foreach, 쿼리 검색 매치,  Number() 사용, 제출했는데 시간 초과
 21_07_25 update: Map 써서 새로운 방법으로 해보자
 21_07_31 update: 시간초과
+
 */
 
 var infoMap = [];
