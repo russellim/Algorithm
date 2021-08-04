@@ -14,6 +14,8 @@ namespace PROG_72412
 	vector<string> _tempInfoArr;
 	vector<vector<string> > _infoArr;
 
+	// string 빈칸 기준으로 자르기.
+	// ***그럼 " and "는 어떻게?
 	vector<string> stringToken(string str)
 	{
 		vector<string> tokens;
@@ -34,9 +36,9 @@ namespace PROG_72412
 		return str;
 	}
 
-	void makeCases(vector<string>& arr, int maxBarCount, int usebarCount, int idx, int insertIdx)
+	void makeCases(vector<string>& arr, int maxBarCount, int useBarCount, int idx, int insertIdx)
 	{
-		if (maxBarCount == usebarCount)
+		if (maxBarCount == useBarCount)
 		{
 			string str = arrayToString(_tempInfoArr);
 			_infoArr[insertIdx].push_back(str);
@@ -47,9 +49,9 @@ namespace PROG_72412
 		// *** 여기 고칠것.
 		for (int i = idx; i < 4; ++i)
 		{
-			if (maxBarCount - usebarCount > 4 - i) return;
+			if (maxBarCount - useBarCount > 4 - i) return;
 			_tempInfoArr[i] = "-";
-			makeCases(arr, maxBarCount, usebarCount + 1, idx + 1, insertIdx);
+			makeCases(arr, maxBarCount, useBarCount + 1, idx + 1, insertIdx);
 			_tempInfoArr[i] = arr[i];
 		}
 	}
