@@ -29,6 +29,7 @@ function makeInfoString(oneInfoArr, totalBarCount, useBarCount, index){
 
     for(let i=index; i<4; ++i){
         // *** 미리 안되는 거 빼놓기
+        // *** 이거 하면 시간 줄지도
         infoTempArr[i] = "-";
         //console.log(infoTempArr);
         makeInfoString(oneInfoArr, totalBarCount, useBarCount+1, i+1);
