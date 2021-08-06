@@ -1,8 +1,8 @@
 ﻿// 21.08.02. 월
 // kakao 2021: 순위 검색 https://programmers.co.kr/learn/courses/30/lessons/72412
-// map? 구현?
 
-// 효율성 시간초과
+// 효율성 시간초과.
+// 맵 사용할 것.
 #include <iostream>
 #include <vector>
 #include <string>
@@ -41,7 +41,7 @@ namespace PROG_72412
 	string arrayToString_forEven(vector<string>& arr)
 	{
 		string str = "";
-		for (int i = 0; i <= 6; i += 2)
+		for (int i = 0; i <= 6; i+=2)
 		{
 			str += arr[i];
 		}
@@ -79,7 +79,7 @@ namespace PROG_72412
 		_infoArr.assign(info.size(), vector<string>());
 
 		// info 경우의 수 구하기.
-		for (int i = 0; i < info.size(); ++i)
+		for (int i=0; i<info.size(); ++i)
 		{
 			auto arr = stringToken(info[i]);
 			_tempInfoArr = arr;
@@ -92,8 +92,8 @@ namespace PROG_72412
 		}
 
 		// 점수 내림차순으로 정렬.
-		sort(_infoArr.begin(), _infoArr.end(), [](vector<string>& a, vector<string>& b) -> bool { return stoi(a[0]) > stoi(b[0]); });
-
+		sort(_infoArr.begin(), _infoArr.end(), [](vector<string>& a, vector<string>& b) -> bool{ return stoi(a[0]) > stoi(b[0]); });
+		
 		// 탐색 시작.
 		for (int i = 0; i < query.size(); ++i)
 		{
@@ -124,7 +124,7 @@ namespace PROG_72412
 
 	void Solution()
 	{
-		auto answer = solution({
+		auto answer = solution({ 
 			"java backend junior pizza 150",
 			"python frontend senior chicken 210",
 			"python frontend senior chicken 150",
