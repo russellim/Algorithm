@@ -1,19 +1,20 @@
-﻿// 21.08.02. 월
+﻿// 21.08.07. 토
 // kakao 2021: 순위 검색 https://programmers.co.kr/learn/courses/30/lessons/72412
+// Map 사용과 이분탐색이 포인트인듯
+// 탐색에 시간을 줄일 방법을 떠올려야한다.
 
-// 효율성 시간초과.
-// 맵 사용할 것.
 #include <iostream>
 #include <vector>
 #include <string>
 #include <sstream>
 #include <algorithm>
+#include <map>
 using namespace std;
 
 namespace PROG_72412
 {
 	vector<string> _tempInfoArr;
-	vector<vector<string> > _infoArr;
+	map<string, vector<int> > infoMap;
 
 	/// string 빈칸 기준으로 자르기.
 	vector<string> stringToken(string& str)
@@ -61,7 +62,7 @@ namespace PROG_72412
 		if (maxBarCount == useBarCount)
 		{
 			string str = arrayToString(_tempInfoArr);
-			_infoArr[infoArrIdx].push_back(str);
+			infoMap[str].push_back(stoi(arr[4]));
 			return;
 		}
 
@@ -76,47 +77,39 @@ namespace PROG_72412
 
 	vector<int> solution(vector<string> info, vector<string> query) {
 		vector<int> answer;
-		_infoArr.assign(info.size(), vector<string>());
 
 		// info 경우의 수 구하기.
 		for (int i=0; i<info.size(); ++i)
 		{
 			auto arr = stringToken(info[i]);
 			_tempInfoArr = arr;
-			_infoArr[i].push_back(_tempInfoArr[4]);
-			_infoArr[i].push_back(arrayToString(arr));
+			infoMap[arrayToString(arr)].push_back(stoi(arr[4]));
 			for (int barCount = 1; barCount <= 4; ++barCount)
 			{
 				makeCases(arr, barCount, 0, 0, i);
 			}
 		}
 
-		// 점수 내림차순으로 정렬.
-		sort(_infoArr.begin(), _infoArr.end(), [](vector<string>& a, vector<string>& b) -> bool{ return stoi(a[0]) > stoi(b[0]); });
-		
+		// 점수 오름차순 정렬.
+		for (auto it = infoMap.begin(); it != infoMap.end(); ++it)
+		{
+			sort(it->second.begin(), it->second.end());
+		}
+
 		// 탐색 시작.
 		for (int i = 0; i < query.size(); ++i)
 		{
 			int count = 0;
 			auto arr = stringToken(query[i]);
 			int indexScore = arr.size() - 1;
+
 			int searchScore = stoi(arr[indexScore]); // 찾는 점수.
 			string searchInfo = arrayToString_forEven(arr); // 찾는 정보.
 
 			// string 경우의수로 만든 정보들 탐색.
-			for (auto& infos : _infoArr)
-			{
-				if (stoi(infos[0]) < searchScore) break; // 점수가 찾는 점수보다 낮으면 끝.
-				for (int infoIdx = 1; infoIdx < infos.size(); ++infoIdx)
-				{
-					if (infos[infoIdx] == searchInfo)
-					{
-						count++;
-						break;
-					}
-				}
-			}
-			answer.push_back(count);
+			// Map key search, 점수는 이분탐색.
+			auto it = lower_bound(infoMap[searchInfo].begin(), infoMap[searchInfo].end(), searchScore);
+			answer.push_back(infoMap[searchInfo].size() - (it - infoMap[searchInfo].begin()));
 		}
 
 		return answer;
