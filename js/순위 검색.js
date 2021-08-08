@@ -8,7 +8,7 @@ https://programmers.co.kr/learn/courses/30/lessons/72412
 
 */
 
-var infoMap = [];
+var infoMap = new Map();
 var infoTempArr;
 
 function arrayToString(arr)
@@ -23,15 +23,14 @@ function arrayToString(arr)
 function makeInfoString(oneInfoArr, totalBarCount, useBarCount, index){
     if(totalBarCount == useBarCount){
         let infoStr = arrayToString(infoTempArr);
-        infoMap.push([oneInfoArr[4], infoStr]);
+        //infoMap.push([oneInfoArr[4], infoStr]);
+        //infoMap[infoStr].push(oneInfoArr[4]);
         return;
     }
 
     for(let i=index; i<4; ++i){
-        // *** 미리 안되는 거 빼놓기
-        // *** 이거 하면 시간 줄지도
+        if (totalBarCount - useBarCount > 4 - i) return;
         infoTempArr[i] = "-";
-        //console.log(infoTempArr);
         makeInfoString(oneInfoArr, totalBarCount, useBarCount+1, i+1);
         infoTempArr[i] = oneInfoArr[i];
     }   
@@ -52,7 +51,7 @@ function solution(info, query){
         }
     });
 
-    infoMap.sort((a, b) => b[0] - a[0]);
+    //infoMap.sort((a, b) => b[0] - a[0]);
     
     let count = 0;
     query.forEach(value =>{
@@ -66,16 +65,7 @@ function solution(info, query){
         
         let searchStr = arrayToString(searchArr[i]);
         let searchScore = splitTemp[1];
-        count = 0;
         
-        for(let infoIndex = 0; infoIndex<infoMap.length; ++infoIndex){
-            if(Number(infoMap[infoIndex][0]) < Number(searchScore)) break;
-            if(infoMap[infoIndex][1] == searchStr) 
-            {
-                ++count;
-            }
-        }
-        answer.push(count);
     }
 
     return answer;
