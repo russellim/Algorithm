@@ -25,6 +25,8 @@ function makeInfoString(oneInfoArr, totalBarCount, useBarCount, index){
         let infoStr = arrayToString(infoTempArr);
         //infoMap.push([oneInfoArr[4], infoStr]);
         //infoMap[infoStr].push(oneInfoArr[4]);
+        // 맵에 추가
+        // key: string(Info), value: int array(Score)
         return;
     }
 
@@ -52,6 +54,7 @@ function solution(info, query){
     });
 
     //infoMap.sort((a, b) => b[0] - a[0]);
+    // map의 value(Score)를 오름차순으로 정렬.
     
     let count = 0;
     query.forEach(value =>{
@@ -66,6 +69,7 @@ function solution(info, query){
         let searchStr = arrayToString(searchArr[i]);
         let searchScore = splitTemp[1];
         
+        // map의 value 이분탐색.
     }
 
     return answer;
