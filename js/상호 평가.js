@@ -10,29 +10,24 @@ function getGrade(score)
 function solution(scores) {
     var answer = '';
     let numOfStudent = scores.length;
-
-    // 배열 최대, 최소 인덱스가 본인이면 0으로 변경
-    // 세로로 점수 더해주고 평균값.
     
-    
-    // 잘못이해한 코드 ㅎㅎ;
-    /*
-        let scoreSum = scores[i].reduce((sum, value) => {
-            return sum + value; 
-        });
-
-        let myScore = scores[i][i];
-        scores[i].sort(function(a, b){
-            return a - b;
-        });
-    
-        if(scores[0] == myScore || scores[numOfStudent-1] == myScore) 
-            scoreSum -= myScore;
+    for(let i=0; i<numOfStudent; ++i){
         
-        console.log(scoreSum + " " + scoreSum/numOfStudent);
+        let maxIndex = scores[i].indexOf(Math.max(...scores[i]));
+        let minIndex = scores[i].indexOf(Math.min(...scores[i]));
+        
+        if(maxIndex == i || minIndex == i) scores[i][i] = 0;
+    }
     
-        answer += getGrade(scoreSum / numOfStudent);
-    */
-    
+    for(let j=0; j<numOfStudent; ++j){
+        let sum = 0;
+        let num = numOfStudent;
+        for(let i=0; i<numOfStudent; ++i){
+            sum += scores[i][j];
+            if(scores[i][j] == 0) num--;
+        }
+        answer += getGrade(sum / num);
+    }
+        
     return answer;
 }
