@@ -11,23 +11,31 @@ function solution(scores) {
     var answer = '';
     let numOfStudent = scores.length;
     
-    for(let i=0; i<numOfStudent; ++i){
-        
-        let maxIndex = scores[i].indexOf(Math.max(...scores[i]));
-        let minIndex = scores[i].indexOf(Math.min(...scores[i]));
-        
-        if(maxIndex == i || minIndex == i) scores[i][i] = 0;
-    }
+    let myScore = [];
     
     for(let j=0; j<numOfStudent; ++j){
-        let sum = 0;
-        let num = numOfStudent;
+        let tempScore = [];
         for(let i=0; i<numOfStudent; ++i){
-            sum += scores[i][j];
-            if(scores[i][j] == 0) num--;
+            tempScore.push(scores[i][j]);
         }
-        answer += getGrade(sum / num);
+        myScore.push(tempScore);
     }
+    
+    for(let i=0; i<numOfStudent; ++i){
+        let maxScore = Math.max(...myScore[i]);
+        let minScore = Math.min(...myScore[i]);
+        
+        if(myScore[i][i] == maxScore
+          && myScore[i].reduce((cnt, value) => cnt + (maxScore == value), 0) == 1) {
+            myScore[i][i] = 0;
+        }
+        else if(myScore[i][i] == minScore &&
+          myScore[i].reduce((cnt, value) => cnt + (minScore == value), 0) == 1) {
+             myScore[i][i] = 0;
+        }
+    }
+    
+    answer += getGrade(myScore[i].reduce((sum, value) => cnt + value) / numOfStudent);
         
     return answer;
 }
