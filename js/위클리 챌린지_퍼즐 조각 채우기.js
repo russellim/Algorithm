@@ -3,6 +3,12 @@
 // 맞는 도형이 있으면 도형의 블록 갯수만큼 반환하고 해당 도형 삭제.
 //figure is [x,y]
 
+class Queue{
+    constructor() { this._arr = []; }
+    push(item) { this._arr.push(item); }
+    pop() { return this._arr.shift(); }
+}
+
 function compareFigure(fig1, fig2, blockCount){
     for(let i=0; i<blockCount; ++i){
         if(fig1[i] != fig2[i])
@@ -16,13 +22,39 @@ function turnFigure(fugure){
     
 }
 
+function isRange(size, row, col){
+    return (row >= 0 && col >= 0 && row < size && col < size);
+}
+
+var direction = [[1, 0], [0, 1], [-1, 0], [0, -1]];
 // BFS 이용해서 [블록 갯수, ...도형 분리] 저장.
 function makeFigure(board, startRow, startCol, findNumber){
-    var res = [];
-    var count = 0;
+    let res = [];
+    let figure = [];
+    let count = 0;
     
-    figure.push(figure);
-    figure.push(count);
+    let q = new Queue();
+    q.push([startRow, startCol]);
+    figure.push([0, 0]);
+    board[startRow][startCol] = 1 - findNumber;
+    ++count;
+
+    while(q.length != 0){
+        let nowPos = q.pop();
+
+        for(let d=0; d<4; ++d){
+            let nextPos = [newPos[0] + direction[d][0], newPos[1] + direction[d][1]];
+            if(!isRange(board.length, nextPos[0], nextPos[1])) continue;
+            if(board[nextPos[0]][nextPos[1]] != findNumber) continue;
+            q.push(nextPos);
+            figure.push([nextPos[0] - startRow, nextPos[1] - startCol]);
+            board[nextPos[0]][nextPos[1]] = 1 - findNumber;
+            ++count;
+        }
+    }
+
+    res.push(count);
+    res.push(figure);
 }
 
 function solution(game_board, table) {
