@@ -17,9 +17,14 @@ function compareFigure(fig1, fig2, blockCount){
     return true;
 }
 
-// 블록 회전하기.
-function turnFigure(fugure){
-    
+// 블록 회전하기. (왼쪽으로 90도)
+function turnFigure(figure = []){
+    let maxCol = 0;
+    figure.forEach(coord => {
+        if(maxCol < coord[1])
+            maxCol = coord[1];
+    });
+    return figure.map(coord => [maxCol - coord[1], coord[0]]);
 }
 
 function isRange(size, row, col){
@@ -60,13 +65,10 @@ function makeFigure(board, startRow, startCol, findNumber){
 function solution(game_board, table) {
     var answer = -1;
     var boardSize = game_board.length;
-    var gameFigures = [];
     var tableFigures = [];
     
     for(let row = 0; row < boardSize; ++row){
         for(let col = 0; col < boardSize; ++col){
-            if(game_board[row][col] === 0)
-                gameFigures.push(makeFigure(game_board, row, col, 0));
             if(table[row][col] === 1)
                 tableFigures.push(makeFigure(table, row, col, 1));
         }
