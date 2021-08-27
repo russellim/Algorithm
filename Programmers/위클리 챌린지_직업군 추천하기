@@ -1,0 +1,31 @@
+#include <string>
+#include <vector>
+#include <sstream>
+#include <iostream>
+
+using namespace std;
+
+vector<string> cutString(string str)
+{
+	vector<string> res;
+	string token;
+	for (stringstream ss(str); (ss >> token); )
+	{
+		res.push_back(token);
+	}
+	return res;
+}
+
+string solution(vector<string> table, vector<string> languages, vector<int> preference) {
+	string answer = "";
+
+	auto test = cutString("a d b");
+
+	return answer;
+}
+
+int main()
+{
+	cout << solution({ "SI JAVA JAVASCRIPT SQL PYTHON C#", "CONTENTS JAVASCRIPT JAVA PYTHON SQL C++", "HARDWARE C C++ PYTHON JAVA JAVASCRIPT", "PORTAL JAVA JAVASCRIPT PYTHON KOTLIN PHP", "GAME C++ C# JAVASCRIPT C JAVA" },
+		{ "PYTHON", "C++", "SQL" }, { 7, 5, 5 }) << endl;
+}
