@@ -74,9 +74,11 @@ function solution(game_board, table) {
         }
     }
     
-    // sort block size asc
-    
-    // 블록 개수 같은 것 끼리 비교해보기.
+    for(let i=0 ;i<boardSize; ++i){
+        for(let j=0; j<boardSize; ++j){
+            
+        }
+    }
     
     return answer;
 }
