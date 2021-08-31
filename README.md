@@ -292,3 +292,6 @@ kakao 2021_합승 택시 요금 Dijkstra https://programmers.co.kr/learn/courses
 #### Level 4
 kakao 2019겨울인턴_호텔 방 배정 u_map https://programmers.co.kr/learn/courses/30/lessons/64063  
 kakao 2020인턴_동굴 탐험 BFS, Set https://programmers.co.kr/learn/courses/30/lessons/67260  
+
+#### etc
+위클리 챌린지_직업군 추천하기 https://programmers.co.kr/learn/courses/30/lessons/84325  
