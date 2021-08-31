@@ -1,7 +1,9 @@
+#include <iostream>
 #include <string>
 #include <vector>
 #include <sstream>
-#include <iostream>
+#include <map>
+#include <algorithm>
 
 using namespace std;
 
@@ -18,14 +20,67 @@ vector<string> cutString(string str)
 
 string solution(vector<string> table, vector<string> languages, vector<int> preference) {
 	string answer = "";
+	int tableSize = table.size();
+	map<string, int> lanScore;
+	vector<int> scoreSum(tableSize, 0);
+	vector<vector<string> > cutTable;
 
-	auto test = cutString("a d b");
+	for (int i = 0; i < languages.size(); ++i)
+	{
+		lanScore.insert({ languages[i], preference[i] });
+	}
+
+	for (int i = 0; i < tableSize; ++i)
+	{
+		cutTable.push_back(cutString(table[i]));
+	}
+
+	sort(cutTable.begin(), cutTable.end());
+
+	for (int i = 0; i < tableSize; ++i)
+	{
+		for (int row = 1; row <= 5; ++row)
+		{
+			string searchLan = cutTable[i][row];
+			scoreSum[i] += ((6 - row) * lanScore[searchLan]);
+		}
+	}
+
+	int maxScore = 0;
+	for (int i = 0; i < tableSize; ++i)
+	{
+		if (maxScore < scoreSum[i])
+		{
+			maxScore = scoreSum[i];
+			answer = cutTable[i][0];
+		}
+	}
 
 	return answer;
 }
 
 int main()
 {
-	cout << solution({ "SI JAVA JAVASCRIPT SQL PYTHON C#", "CONTENTS JAVASCRIPT JAVA PYTHON SQL C++", "HARDWARE C C++ PYTHON JAVA JAVASCRIPT", "PORTAL JAVA JAVASCRIPT PYTHON KOTLIN PHP", "GAME C++ C# JAVASCRIPT C JAVA" },
-		{ "PYTHON", "C++", "SQL" }, { 7, 5, 5 }) << endl;
+	ios_base::sync_with_stdio(0);
+	cin.tie(0); cout.tie(0);
+
+	cout << solution({ 
+		"SI JAVA JAVASCRIPT SQL PYTHON C#",
+		"CONTENTS JAVASCRIPT JAVA PYTHON SQL C++",
+		"HARDWARE C C++ PYTHON JAVA JAVASCRIPT",
+		"PORTAL JAVA JAVASCRIPT PYTHON KOTLIN PHP",
+		"GAME C++ C# JAVASCRIPT C JAVA" },
+		{ "PYTHON", "C++", "SQL" },
+		{ 7, 5, 5 }) << endl;
+
+	cout << solution({
+		"SI JAVA JAVASCRIPT SQL PYTHON C#",
+		"CONTENTS JAVASCRIPT JAVA PYTHON SQL C++",
+		"HARDWARE C C++ PYTHON JAVA JAVASCRIPT",
+		"PORTAL JAVA JAVASCRIPT PYTHON KOTLIN PHP",
+		"GAME C++ C# JAVASCRIPT C JAVA"}, 
+		{ "JAVA", "JAVASCRIPT" },
+		{ 7, 5 }) << endl;
+
+	return 0;
 }
