@@ -1,0 +1,63 @@
+#include <string>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+struct playerInfo
+{
+    int num;
+    int weight;
+    double winRate;
+    int heavyThanMe;
+};
+
+bool cmp(const playerInfo& p1, const playerInfo& p2)
+{
+    if(p1.winRate == p2.winRate)
+    {
+        if(p1.heavyThanMe == p2.heavyThanMe)
+        {
+            if(p1.weight == p2.weight)
+            {
+                return p1.num < p2.num;
+            }
+            return p1.weight > p2.weight;
+        }
+        return p1.heavyThanMe > p2.heavyThanMe;
+    }
+    return p1.winRate > p2.winRate;
+}
+
+vector<int> solution(vector<int> weights, vector<string> head2head) {
+    vector<int> answer;
+    int playerCount = weights.size();
+    int enemyCount = playerCount - 1;
+    vector<playerInfo> info;
+    
+    for(int i=0; i<playerCount; ++i)
+    {
+        int winCount = 0;
+        int heavyThanMe = 0;
+        for(int j=0; j<playerCount; ++j)
+        {
+            if(i == j) continue;
+            if(head2head[i][j] == 'W')
+            {
+                winCount++;
+                if(weights[j] > weights[i]) heavyThanMe++; 
+            }
+        }
+        info.push_back({i+1, weights[i], (double)winCount/enemyCount,  heavyThanMe});
+    }
+    
+    sort(info.begin(), info.end(), cmp);
+    
+    for(auto& x: info)
+    {
+        answer.push_back(x.num);
+    }
+    
+    return answer;
+}
